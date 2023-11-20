@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Выбор оружия</title>
     <style>
-        /* Добавьте стили по вашему выбору */
         body {
             font-family: Arial, sans-serif;
         }
@@ -54,7 +53,66 @@
         <div id="melee-categories" style="display: none;">
             <label for="melee-type">3. Тип оружия:</label>
             <select id="melee-type" name="melee-type">
-                <!-- Ваши опции для типов ближнего боя -->
+                <!-- Опции для типов ближнего боя -->
+                    <!-- Одноручное -->
+                        <!-- Разящее -->
+                            <!-- Запад -->
+                            <option value="One-handed sword">Одноручный меч</option>
+                            <!-- Восток -->
+                            <option value="Saber">Сабля</option>
+                        <!-- Колющее -->
+                            <!-- Восток -->
+                            <option value="Dagger">Кинжал</option>
+                            <!-- Запад -->
+                                <!-- Без лезвия -->
+                                <option value="Spear">Копье</option>
+                                <!-- С лезвием -->
+                                    <!-- Компактность -->
+                                    <option value="Knife">Нож</option>
+                                    <!-- Дальность -->
+                                    <option value="Epee">Шпага</option>
+                        <!-- Тупое -->
+                            <!-- Металл -->
+                            <option value="Mace">Булава</option>
+                            <!-- Дерево -->
+                            <option value="One-handed club">Одноручная дубина</option>
+                        <!-- Рубящее -->
+                            <!-- Лезвие с одной стороны -->
+                            <option value="One-handed ax">Одноручный топор</option>
+                            <!-- Лезвие с двух сторон -->
+                            <option value="One-handed poleax">Одноручная секира</option>
+                        <!-- Вращательное -->
+                            <!-- Запад -->
+                            <option value="Flail">Кистень</option>
+                            <!-- Восток -->
+                            <option value="Nunchaku">Нунчаки</option>
+                        <!-- Колюще-рубящее -->
+                        <option value="Glaive">Глефа</option>
+                    <!-- Двуручное -->
+                        <!-- Разящее -->
+                            <!-- Запад -->
+                            <option value="Two-handed sword">Двуручный меч</option>
+                            <!-- Восток -->
+                            <option value="Katana">Катана</option>
+                        <!-- Колющее -->
+                            <!-- Запад -->
+                            <option value="Pike">Пика</option>
+                            <!-- Восток -->
+                            <option value="Naginata">Нагината</option>
+                        <!-- Тупое -->
+                            <!-- Металл -->
+                            <option value="Hammer">Молот</option>
+                            <!-- Дерево -->
+                            <option value="Two-handed club">Двуручная дубина</option>
+                        <!-- Рубящее -->
+                            <!-- Лезвие с одной стороны -->
+                            <option value="Two-handed ax">Двуручный топор</option>
+                            <!-- Лезвие с двух сторон -->
+                            <option value="Two-handed poleax">Двуручная секира</option>
+                        <!-- Вращательное -->
+                        <option value="Kusarigma">Кусаригма</option>
+                        <!-- Колюще-рубящее -->
+                        <option value="Halberd">Алебарда</option>
             </select>
         </div>
     </div>
@@ -62,7 +120,27 @@
     <div id="ranged-weapons" style="display: none;">
         <label for="ranged-type">2. Тип дальнего оружия:</label>
         <select id="ranged-type" name="ranged-type">
-            <!-- Ваши опции для типов дальнего боя -->
+            <!-- Опции для типов дальнего боя -->
+                <!-- Дальность стрельбы -->
+                    <!-- Дальность стрельбы -->
+                    <option value="Long bow">Длинный лук</option>
+                    <!-- Скорость стрельбы -->
+                    <option value="Short bow">Короткий лук</option>
+                    <!-- Сбалансированный -->
+                    <option value="Reflex bow">Рефлексивный лук</option>
+                <!-- Мощность -->
+                    <!-- Удобство -->
+                    <option value="Light crossbow">Легкий арбалет</option>
+                    <!-- Мощность -->
+                    <option value="Heavy crossbow">Тяжелый арбалет</option>
+                <!-- Компактность -->
+                    <!-- Дальность стрельбы -->
+                    <option value="Sling">Праща</option>
+                    <!-- Точность -->
+                        <!-- Универсальность -->
+                        <option value="Kunai">Кунаи</option>
+                        <!-- Точность -->
+                        <option value="Shurikens">Сюрикен</option>
         </select>
     </div>
 
