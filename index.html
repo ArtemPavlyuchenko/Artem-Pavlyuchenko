@@ -4,26 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вибір холодної зброї</title>
+    <title>Выбор оружия</title>
     <style>
-        body
-        {
+        /* Добавьте стили по вашему выбору */
+        body {
             font-family: Arial, sans-serif;
         }
-        label
-        {
+        label {
             display: block;
             margin-bottom: 5px;
         }
-        select
-        {
+        select {
             width: 100%;
             padding: 8px;
             margin-bottom: 10px;
             box-sizing: border-box;
         }
-        button
-        {
+        button {
             padding: 10px;
             background-color: #4CAF50;
             color: white;
@@ -31,109 +28,93 @@
             border-radius: 5px;
             cursor: pointer;
         }
-        button:hover
-        {
+        button:hover {
             background-color: #45a049;
         }
     </style>
 </head>
 <body>
 
-<h1>Вибір холодної зброї</h1>
+<h1>Выбор оружия</h1>
 
-<form id="special-parameters">
-    <label for="weapon-type">Вид зброї</label>
-    <select id="weapon-type" name="weapon-type" onchange="showAdditionalQuestion()">
-        <option value="One-handed">Одноручна</option>
-        <option value="Two-handed">Дворучна</option>
+<form id="weapon-selection">
+    <label for="combat-type">1. Ближний бой / Дальний бой:</label>
+    <select id="combat-type" name="combat-type" onchange="showWeaponCategories()">
+        <option value="Melee">Ближний бой</option>
+        <option value="Ranged">Дальний бой</option>
     </select>
 
-    <div id="additional-questions" style="display: none;">
-        <label for="usage">Тип зброї</label>
-        <select id="usage" name="usage">
-            <option value="Smashing">Разяща</option>
-            <option value="Stabbing">Колюча</option>
-            <option value="Blunt">Тупа</option>
-            <option value="Slashing">Рубаюча</option>
-            <option value="Rotating">Обертальна</option>
+    <div id="melee-weapons" style="display: none;">
+        <label for="one-handed">2. Одноручное / Двуручное:</label>
+        <select id="one-handed" name="one-handed" onchange="showMeleeCategories()">
+            <option value="One-Handed">Одноручное</option>
+            <option value="Two-Handed">Двуручное</option>
+        </select>
+
+        <div id="melee-categories" style="display: none;">
+            <label for="melee-type">3. Тип оружия:</label>
+            <select id="melee-type" name="melee-type">
+                <!-- Ваши опции для типов ближнего боя -->
+            </select>
+        </div>
+    </div>
+
+    <div id="ranged-weapons" style="display: none;">
+        <label for="ranged-type">2. Тип дальнего оружия:</label>
+        <select id="ranged-type" name="ranged-type">
+            <!-- Ваши опции для типов дальнего боя -->
         </select>
     </div>
 
-    <button type="button" onclick="Select weapon()">Дізнатися підходящу зброю</button>
+    <button type="button" onclick="selectWeapon()">Выбрать оружие</button>
 </form>
 
 <div id="result"></div>
 
 <script>
-    function showAdditionalQuestion()
-    {
-        var weaponType = document.getElementById("weapon-type").value;
-        var additionalQuestions = document.getElementById("additional-questions");
+    function showWeaponCategories() {
+        var combatType = document.getElementById("combat-type").value;
+        var meleeWeapons = document.getElementById("melee-weapons");
+        var rangedWeapons = document.getElementById("ranged-weapons");
 
-        if (weaponType === "Text-based" || weaponType === "Graphical")
-        {
-            additionalQuestions.style.display = "block";
-        }
-        else
-        {
-            additionalQuestions.style.display = "none";
+        if (combatType === "Melee") {
+            meleeWeapons.style.display = "block";
+            rangedWeapons.style.display = "none";
+        } else if (combatType === "Ranged") {
+            meleeWeapons.style.display = "none";
+            rangedWeapons.style.display = "block";
         }
     }
 
-    function selectWeapon()
-    {
-        var weaponType = document.getElementById("weapon-type").value;
-        var usage = document.getElementById("usage").value;
-        var priceSegment = document.getElementById("price-segment").value;
-        var architecture = document.getElementById("architecture").value;
+    function showMeleeCategories() {
+        var oneHanded = document.getElementById("one-handed").value;
+        var meleeCategories = document.getElementById("melee-categories");
 
-        var result = "";
+        if (oneHanded === "One-Handed") {
+            meleeCategories.style.display = "block";
+        } else {
+            meleeCategories.style.display = "none";
+        }
+    }
 
-        if (weaponType === "One-handed")
-        {
-            if (usage === "Smashing")
-            {
-                result = "Підходяща холодна зброя для Вас: Одноручний меч";
-            }
-            else if (usage === "Stabbing")
-            {
-                result = "Підходяща холодна зброя для Вас: Кинджал";
-            }
-            else if (usage === "Blunt")
-            {
-                result = "Підходяща холодна зброя для Вас: Булава";
-            }
-            else if (usage === "Slashing")
-            {
-                result = "Підходяща холодна зброя для Вас: Одноручна бойова сокира";
-            }
-            else if (usage === "Rotating")
-            {
-                result = "Підходяща холодна зброя для Вас: Нунчаки";
-            }
+    function selectWeapon() {
+        var combatType = document.getElementById("combat-type").value;
+        var result = "Выбрано оружие: ";
+
+        if (combatType === "Melee") {
+            var oneHanded = document.getElementById("one-handed").value;
+            var meleeType = document.getElementById("melee-type").value;
+
+            result += oneHanded === "One-Handed" ? "Одноручное " : "Двуручное ";
+            result += "ближнего боя типа " + meleeType;
+        } else if (combatType === "Ranged") {
+            var rangedType = document.getElementById("ranged-type").value;
+            result += "Дальнего боя типа " + rangedType;
         }
-        else if (osType === "Two-handed")
-        {
-            if (usage === "Smashing")
-            {
-                result = "Підходяща холодна зброя для Вас: Дворучний меч";
-            }
-            if (usage === "Stabbing")
-            {
-                result = "Підходяща холодна зброя для Вас: Піка";
-            }
-            if (usage === "Blunt")
-            {
-                result = "Підходяща холодна зброя для Вас: Молот";
-            }
-            if (usage === "Slashing")
-            {
-                result = "Підходяща холодна зброя для Вас: Дворучна бойова сокира";
-            }
-        }
+
+        document.getElementById("result").innerHTML = result;
     }
 </script>
-
 
 </body>
 </html>
