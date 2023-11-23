@@ -1,165 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Выбор операционной системы</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      margin: 20px;
-    }
-
-    h1 {
-      text-align: center;
-      color: #333;
-    }
-
-    form {
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    input[type="radio"] {
-      margin-right: 5px;
-    }
-
-    button {
-      background-color: #4caf50;
-      color: #fff;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #45a049;
-    }
-
-    #result {
-      margin-top: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор оружия</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-  <h1>Выбор операционной системы</h1>
-  <form id="osForm">
-      <label>
-    <strong>1. Выберите тип операционной системы:</strong>
-    <br>
-    <input type="radio" name="osType" value="text" required> Текстовый интерфейс (DOS)
-    <br>
-    <input type="radio" name="osType" value="graphical" required> Графический интерфейс
-  </label>
 
-  <label>
-    <strong>2. Для каких задач вам нужна операционная система? (Выберите все подходящие варианты):</strong>
-    <br>
-    <input type="radio" name="applications[]" value="server"> Серверные приложения
-    <br>
-    <input type="radio" name="applications[]" value="embedded"> Встроенные системы
-    <br>
-    <input type="radio" name="applications[]" value="office"> Офисные рабочие станции
-  </label>
+<h1>Выбор оружия</h1>
 
-  <label>
-    <strong>3. Какой ценовой сегмент вы рассматриваете?</strong>
-    <br>
-    <input type="radio" name="price" value="under10k" required> До 10 000
-    <br>
-    <input type="radio" name="price" value="over10k" required> От 10 000 и выше
-  </label>
+<form id="weapon-selection">
+    <label for="combat-type">1. Ближний бой / Дальний бой:</label>
+    <select id="combat-type" name="combat-type" onchange="showWeaponCategories()">
+        <option value="Melee">Ближний бой</option>
+        <option value="Ranged">Дальний бой</option>
+    </select>
 
-  <label>
-    <strong>4. Какая архитектура вас интересует?</strong>
-    <br>
-    <input type="radio" name="architecture" value="old" required> Застарелая
-    <br>
-    <input type="radio" name="architecture" value="new" required> Новая
-  </label>
+    <div id="melee-weapons" style="display: none;">
+        <label for="one-handed">2. Одноручное / Двуручное:</label>
+        <select id="one-handed" name="one-handed" onchange="showMeleeCategories()">
+            <option value="One-Handed">Одноручное</option>
+            <option value="Two-Handed">Двуручное</option>
+        </select>
 
-  <label>
-    <strong>5. Требуется ли вам поддержка многозадачности?</strong>
-    <br>
-    <input type="radio" name="multitasking" value="yes"> Да
-    <br>
-    <input type="radio" name="multitasking" value="no"> Нет
-  </label>
-
-    <div id="additionalOptions">
-      <!-- Здесь будут добавляться дополнительные радиокнопки -->
+        <div id="melee-categories" style="display: none;">
+            <label for="melee-type">3. Тип оружия:</label>
+            <select id="melee-type" name="melee-type">
+                <!-- Опции для типов ближнего боя -->
+                    <!-- Одноручное -->
+                        <!-- Разящее -->
+                            <!-- Запад -->
+                            <option value="One-handed sword">Одноручный меч</option>
+                            <!-- Восток -->
+                            <option value="Saber">Сабля</option>
+                        <!-- Колющее -->
+                            <!-- Восток -->
+                            <option value="Dagger">Кинжал</option>
+                            <!-- Запад -->
+                                <!-- Без лезвия -->
+                                <option value="Spear">Копье</option>
+                                <!-- С лезвием -->
+                                    <!-- Компактность -->
+                                    <option value="Knife">Нож</option>
+                                    <!-- Дальность -->
+                                    <option value="Epee">Шпага</option>
+                        <!-- Тупое -->
+                            <!-- Металл -->
+                            <option value="Mace">Булава</option>
+                            <!-- Дерево -->
+                            <option value="One-handed club">Одноручная дубина</option>
+                        <!-- Рубящее -->
+                            <!-- Лезвие с одной стороны -->
+                            <option value="One-handed ax">Одноручный топор</option>
+                            <!-- Лезвие с двух сторон -->
+                            <option value="One-handed poleax">Одноручная секира</option>
+                        <!-- Вращательное -->
+                            <!-- Запад -->
+                            <option value="Flail">Кистень</option>
+                            <!-- Восток -->
+                            <option value="Nunchaku">Нунчаки</option>
+                        <!-- Колюще-рубящее -->
+                        <option value="Glaive">Глефа</option>
+                    <!-- Двуручное -->
+                        <!-- Разящее -->
+                            <!-- Запад -->
+                            <option value="Two-handed sword">Двуручный меч</option>
+                            <!-- Восток -->
+                            <option value="Katana">Катана</option>
+                        <!-- Колющее -->
+                            <!-- Запад -->
+                            <option value="Pike">Пика</option>
+                            <!-- Восток -->
+                            <option value="Naginata">Нагината</option>
+                        <!-- Тупое -->
+                            <!-- Металл -->
+                            <option value="Hammer">Молот</option>
+                            <!-- Дерево -->
+                            <option value="Two-handed club">Двуручная дубина</option>
+                        <!-- Рубящее -->
+                            <!-- Лезвие с одной стороны -->
+                            <option value="Two-handed ax">Двуручный топор</option>
+                            <!-- Лезвие с двух сторон -->
+                            <option value="Two-handed poleax">Двуручная секира</option>
+                        <!-- Вращательное -->
+                        <option value="Kusarigma">Кусаригма</option>
+                        <!-- Колюще-рубящее -->
+                        <option value="Halberd">Алебарда</option>
+            </select>
+        </div>
     </div>
 
-    <button type="button" onclick="suggestOS()">Подобрать ОС</button>
-  </form>
+    <div id="ranged-weapons" style="display: none;">
+        <label for="ranged-type">2. Тип дальнего оружия:</label>
+        <select id="ranged-type" name="ranged-type">
+            <!-- Опции для типов дальнего боя -->
+                <!-- Дальность стрельбы -->
+                    <!-- Дальность стрельбы -->
+                    <option value="Long bow">Длинный лук</option>
+                    <!-- Скорость стрельбы -->
+                    <option value="Short bow">Короткий лук</option>
+                    <!-- Сбалансированный -->
+                    <option value="Reflex bow">Рефлексивный лук</option>
+                <!-- Мощность -->
+                    <!-- Удобство -->
+                    <option value="Light crossbow">Легкий арбалет</option>
+                    <!-- Мощность -->
+                    <option value="Heavy crossbow">Тяжелый арбалет</option>
+                <!-- Компактность -->
+                    <!-- Дальность стрельбы -->
+                    <option value="Sling">Праща</option>
+                    <!-- Точность -->
+                        <!-- Универсальность -->
+                        <option value="Kunai">Кунаи</option>
+                        <!-- Точность -->
+                        <option value="Shurikens">Сюрикен</option>
+        </select>
+    </div>
 
-  <div id="result"></div>
+    <button type="button" onclick="selectWeapon()">Выбрать оружие</button>
+</form>
 
-  <script>
-    function addRadioButtons() {
-      // Получаем текущий элемент формы
-      const currentForm = document.getElementById('osForm');
+<div id="result"></div>
 
-      // Получаем количество дочерних элементов в текущей форме
-      const currentFormChildCount = currentForm.childElementCount;
+<script>
+    function showWeaponCategories() {
+        var combatType = document.getElementById("combat-type").value;
+        var meleeWeapons = document.getElementById("melee-weapons");
+        var rangedWeapons = document.getElementById("ranged-weapons");
 
-      // Создаем новый div для новых радиокнопок
-      const newDiv = document.createElement('div');
-      newDiv.id = `optionsGroup${currentFormChildCount}`;
-      newDiv.style.display = 'none'; // Скрываем его изначально
-
-      // Создаем новые радиокнопки
-      const newLabel = document.createElement('label');
-      const newRadio1 = document.createElement('input');
-      const newRadio2 = document.createElement('input');
-
-      newLabel.innerHTML = `<strong>${currentFormChildCount + 1}. Новые радиокнопки:</strong>`;
-      newLabel.appendChild(document.createElement('br'));
-
-      newRadio1.type = 'radio';
-      newRadio1.name = `newOptions${currentFormChildCount}`;
-      newRadio1.value = 'option1';
-      newRadio1.required = true;
-
-      newRadio2.type = 'radio';
-      newRadio2.name = `newOptions${currentFormChildCount}`;
-      newRadio2.value = 'option2';
-      newRadio2.required = true;
-
-      newLabel.appendChild(newRadio1);
-      newLabel.appendChild(document.createTextNode(' Вариант 1'));
-      newLabel.appendChild(document.createElement('br'));
-      newLabel.appendChild(newRadio2);
-      newLabel.appendChild(document.createTextNode(' Вариант 2'));
-
-      newDiv.appendChild(newLabel);
-
-      // Вставляем новый div после текущей формы
-      currentForm.parentNode.insertBefore(newDiv, currentForm.nextSibling);
-
-      // Показываем новый div
-      newDiv.style.display = 'block';
+        if (combatType === "Melee") {
+            meleeWeapons.style.display = "block";
+            rangedWeapons.style.display = "none";
+        } else if (combatType === "Ranged") {
+            meleeWeapons.style.display = "none";
+            rangedWeapons.style.display = "block";
+        }
     }
 
-    function suggestOS() {
-      // Ваша текущая логика остается неизменной
+    function showMeleeCategories() {
+        var oneHanded = document.getElementById("one-handed").value;
+        var meleeCategories = document.getElementById("melee-categories");
 
-      // Вызываем функцию добавления радиокнопок
-      addRadioButtons();
+        if (oneHanded === "One-Handed") {
+            meleeCategories.style.display = "block";
+        } else {
+            meleeCategories.style.display = "none";
+        }
     }
-  </script>
+
+    function selectWeapon() {
+        var combatType = document.getElementById("combat-type").value;
+        var result = "Выбрано оружие: ";
+
+        if (combatType === "Melee") {
+            var oneHanded = document.getElementById("one-handed").value;
+            var meleeType = document.getElementById("melee-type").value;
+
+            result += oneHanded === "One-Handed" ? "Одноручное " : "Двуручное ";
+            result += "ближнего боя типа " + meleeType;
+        } else if (combatType === "Ranged") {
+            var rangedType = document.getElementById("ranged-type").value;
+            result += "Дальнего боя типа " + rangedType;
+        }
+
+        document.getElementById("result").innerHTML = result;
+    }
+</script>
+
 </body>
 </html>
