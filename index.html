@@ -255,7 +255,7 @@
         </div>
     </div>
     
-    <button type="button" onclick="selectWeapon()">Выбрать оружие</button>
+    <button type="button" onclick="suggestWeapon()">Выбрать оружие</button>
 </form>
 
 <div id="result"></div>
@@ -523,6 +523,8 @@
         }
       }
     }
+
+    document.getElementById('result').innerText = suggestedWeapon;
   }
 </script>
 </body>
