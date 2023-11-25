@@ -36,11 +36,11 @@
 
 <h1>Выбор оружия</h1>
 
-<form id="Weapon_selection" onsubmit="suggestWeapon(); return false;">
+<form id="Weapon_selection" onsubmit="suggestWeapon(this); return false;">
     <label>
       <strong>1. Ближний бой / Дальний бой:</strong>
       <br>
-      <input type="radio" name="combat_type1" value="Melee_combat" required> Ближний бой
+      <input type="radio" name="combat_type1" value="Melee_combat" required> бл бой
       <br>
       <input type="radio" name="combat_type1" value="Ranged_combat" required> Дальний бой
     </label>
@@ -268,7 +268,7 @@
 
     if (!combat_type1)
     {
-        alert("Выберите тип боя!"); // или другая обработка, если тип боя не выбран
+        resultElement.innerText = "Выберите тип боя!";
         return;
     }
 
