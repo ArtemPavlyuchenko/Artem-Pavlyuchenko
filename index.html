@@ -36,7 +36,7 @@
 
 <h1>Выбор оружия</h1>
 
-<form id="Weapon_selection">
+<form id="Weapon_selection" onsubmit="suggestWeapon(); return false;">
     <label>
       <strong>1. Ближний бой / Дальний бой:</strong>
       <br>
@@ -255,7 +255,7 @@
         </div>
     </div>
     
-    <button type="button" onclick="suggestWeapon()">Выбрать оружие</button>
+    <button type="submit">Выбрать оружие</button>
 </form>
 
 <div id="result"></div>
