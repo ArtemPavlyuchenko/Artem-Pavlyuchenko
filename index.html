@@ -272,7 +272,7 @@
 
     let suggestedWeapon = "";
 
-    // Логіка для Ближний бой
+    // Логика для ближнего боя
     if (combat_type1 === 'Melee_combat')
     {
       const Melee_weapons_combat_type2 = formData.get('Melee_weapons_combat_type2');
@@ -323,7 +323,7 @@
                 suggestedWeapon = "Нож";
               }
                   
-              else if (One_Handed_combat_type4_2_1_1 === 'One_Handed_categories2_categories2_categories2_categories2)
+              else if (One_Handed_combat_type4_2_1_1 === 'One_Handed_categories2_categories2_categories2_categories2')
               {
                 suggestedWeapon = "Шпага";
               }
@@ -401,7 +401,7 @@
           }
         }
             
-        else if (One_Handed_combat_type3 === 'Two_Handed_categories2')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories2')
         {
           const Two_Handed_combat_type4_2 = formData.get('Two_Handed_combat_type4_2');
 
@@ -416,7 +416,7 @@
           }
         }
             
-        else if (One_Handed_combat_type3 === 'Two_Handed_categories3')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories3')
         {
           const Two_Handed_combat_type4_3 = formData.get('Two_Handed_combat_type4_3');
 
@@ -431,7 +431,7 @@
           }
         }
             
-        else if (One_Handed_combat_type3 === 'Two_Handed_categories4')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories4')
         {
           const Two_Handed_combat_type4_4 = formData.get('Two_Handed_combat_type4_4');
 
@@ -446,18 +446,18 @@
           }
         }
             
-        else if (One_Handed_combat_type3 === 'Two_Handed_categories5')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories5')
         {
           suggestedWeapon = "Кусаригма";
         }
             
-        else if (One_Handed_combat_type3 === 'Two_Handed_categories6')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories6')
         {
           suggestedWeapon = "Алебарда";
         }
       }
     }
-    // Логіка для Дальний бой
+    // Логика для дальнего боя
     else if (combat_type1 === 'Ranged_combat')
     {
       const Ranged_weapons_combat_type2 = formData.get('Ranged_weapons_combat_type2');
@@ -499,7 +499,6 @@
 
       else if (Ranged_weapons_combat_type2 === 'Compactness')
       {
-
         const Compactness_combat_type3 = formData.get('Compactness_combat_type3');
 
         if (Compactness_combat_type3 === 'Compactness_categories3')
