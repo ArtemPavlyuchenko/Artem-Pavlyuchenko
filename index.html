@@ -263,27 +263,26 @@
 <script>
   function suggestWeapon()
   {
-    // Збираємо відповіді користувача
+    // Получаем форму
     const form = document.getElementById('Weapon_selection');
-    const formData = new FormData(form);
 
-    // Визначаємо тип інтерфейсу
-    const combat_type1 = formData.get('combat_type1');
+    // Определяем тип интерфейса
+    const combat_type1 = form.querySelector('input[name="combat_type1"]:checked').value;
 
     let suggestedWeapon = "";
 
     // Логика для ближнего боя
     if (combat_type1 === 'Melee_combat')
     {
-      const Melee_weapons_combat_type2 = formData.get('Melee_weapons_combat_type2');
+      const Melee_weapons_combat_type2 = form.querySelector('input[name="Melee_weapons_combat_type2"]:checked').value;
 
       if (Melee_weapons_combat_type2 === 'One_Handed')
       {
-        const One_Handed_combat_type3 = formData.get('One_Handed_combat_type3'); 
+        const One_Handed_combat_type3 = form.querySelector('input[name="One_Handed_combat_type3"]:checked').value;
         
         if (One_Handed_combat_type3 === 'One_Handed_categories1')
         {
-          const One_Handed_combat_type4_1 = formData.get('One_Handed_combat_type4_1');
+          const One_Handed_combat_type4_1 = form.querySelector('input[name="One_Handed_combat_type4_1"]:checked').value;
           
           if (One_Handed_combat_type4_1 === 'One_Handed_categories1_categories1')
           {
@@ -298,7 +297,7 @@
             
         else if (One_Handed_combat_type3 === 'One_Handed_categories2')
         {
-          const One_Handed_combat_type4_2 = formData.get('One_Handed_combat_type4_2');
+          const One_Handed_combat_type4_2 = form.querySelector('input[name="One_Handed_combat_type4_2"]:checked').value;
 
           if (One_Handed_combat_type4_2 === 'One_Handed_categories2_categories1')
           {
@@ -307,7 +306,7 @@
 
           else if (One_Handed_combat_type4_2 === 'One_Handed_categories2_categories2')
           {
-            const One_Handed_combat_type4_2_1 = formData.get('One_Handed_combat_type4_2_1');
+            const One_Handed_combat_type4_2_1 = form.querySelector('input[name="One_Handed_combat_type4_2_1"]:checked').value;
 
             if (One_Handed_combat_type4_2_1 === 'One_Handed_categories2_categories2_categories1')
             {
@@ -316,7 +315,7 @@
                 
             else if (One_Handed_combat_type4_2_1 === 'One_Handed_categories2_categories2_categories2')
             {
-              const One_Handed_combat_type4_2_1_1 = formData.get('One_Handed_combat_type4_2_1_1');
+              const One_Handed_combat_type4_2_1_1 = form.querySelector('input[name="One_Handed_combat_type4_2_1_1"]:checked').value;
 
               if (One_Handed_combat_type4_2_1_1 === 'One_Handed_categories2_categories2_categories2_categories1')
               {
@@ -333,7 +332,7 @@
             
         else if (One_Handed_combat_type3 === 'One_Handed_categories3')
         {
-          const One_Handed_combat_type4_3 = formData.get('One_Handed_combat_type4_3');
+          const One_Handed_combat_type4_3 = form.querySelector('input[name="One_Handed_combat_type4_3"]:checked').value;
             
           if (One_Handed_combat_type4_3 === 'One_Handed_categories3_categories1')
           {
@@ -348,7 +347,7 @@
             
         else if (One_Handed_combat_type3 === 'One_Handed_categories4')
         {
-          const One_Handed_combat_type4_4 = formData.get('One_Handed_combat_type4_4');
+          const One_Handed_combat_type4_4 = form.querySelector('input[name="One_Handed_combat_type4_4"]:checked').value;
             
           if (One_Handed_combat_type4_4 === 'One_Handed_categories4_categories1')
           {
@@ -363,7 +362,7 @@
             
         else if (One_Handed_combat_type3 === 'One_Handed_categories5')
         {
-          const One_Handed_combat_type4_5 = formData.get('One_Handed_combat_type4_5');
+          const One_Handed_combat_type4_5 = form.querySelector('input[name="One_Handed_combat_type4_5"]:checked').value;
             
           if (One_Handed_combat_type4_5 === 'One_Handed_categories5_categories1')
           {
@@ -384,11 +383,11 @@
           
       else if (Melee_weapons_combat_type2 === 'Two_Handed')
       {
-        const Two_Handed_combat_type3 = formData.get('Two_Handed_combat_type3');
+        const Two_Handed_combat_type3 = form.querySelector('input[name="Two_Handed_combat_type3"]:checked').value;
 
         if (Two_Handed_combat_type3 === 'Two_Handed_categories1')
         {
-          const Two_Handed_combat_type4_1 = formData.get('Two_Handed_combat_type4_1');
+          const Two_Handed_combat_type4_1 = form.querySelector('input[name="Two_Handed_combat_type4_1"]:checked').value;
 
           if (Two_Handed_combat_type4_1 === 'Two_Handed_categories1_categories1')
           {
@@ -403,7 +402,7 @@
             
         else if (Two_Handed_combat_type3 === 'Two_Handed_categories2')
         {
-          const Two_Handed_combat_type4_2 = formData.get('Two_Handed_combat_type4_2');
+          const Two_Handed_combat_type4_2 = form.querySelector('input[name="Two_Handed_combat_type4_2"]:checked').value;
 
           if (Two_Handed_combat_type4_2 === 'Two_Handed_categories2_categories1')
           {
@@ -418,7 +417,7 @@
             
         else if (Two_Handed_combat_type3 === 'Two_Handed_categories3')
         {
-          const Two_Handed_combat_type4_3 = formData.get('Two_Handed_combat_type4_3');
+          const Two_Handed_combat_type4_3 = form.querySelector('input[name="Two_Handed_combat_type4_3"]:checked').value;
 
           if (Two_Handed_combat_type4_3 === 'Two_Handed_categories3_categories1')
           {
@@ -433,7 +432,7 @@
             
         else if (Two_Handed_combat_type3 === 'Two_Handed_categories4')
         {
-          const Two_Handed_combat_type4_4 = formData.get('Two_Handed_combat_type4_4');
+          const Two_Handed_combat_type4_4 = form.querySelector('input[name="Two_Handed_combat_type4_4"]:checked').value;
 
           if (Two_Handed_combat_type4_4 === 'Two_Handed_categories4_categories1')
           {
@@ -460,11 +459,11 @@
     // Логика для дальнего боя
     else if (combat_type1 === 'Ranged_combat')
     {
-      const Ranged_weapons_combat_type2 = formData.get('Ranged_weapons_combat_type2');
+      const Ranged_weapons_combat_type2 = form.querySelector('input[name="Ranged_weapons_combat_type2"]:checked').value;
 
       if (Ranged_weapons_combat_type2 === 'Range')
       {
-        const Range_combat_type3 = formData.get('Range_combat_type3');
+        const Range_combat_type3 = form.querySelector('input[name="Range_combat_type3"]:checked').value;
 
         if (Range_combat_type3 === 'Range_categories1')
         {
@@ -484,7 +483,7 @@
 
       else if (Ranged_weapons_combat_type2 === 'Power')
       {
-        const Power_combat_type3 = formData.get('Power_combat_type3');
+        const Power_combat_type3 = form.querySelector('input[name="Power_combat_type3"]:checked').value;
         
         if (Power_combat_type3 === 'Power_categories1')
         {
@@ -499,7 +498,7 @@
 
       else if (Ranged_weapons_combat_type2 === 'Compactness')
       {
-        const Compactness_combat_type3 = formData.get('Compactness_combat_type3');
+        const Compactness_combat_type3 = form.querySelector('input[name="Compactness_combat_type3"]:checked').value;
 
         if (Compactness_combat_type3 === 'Compactness_categories1')
         {
@@ -508,7 +507,7 @@
 
         else if (Compactness_combat_type3 === 'Compactness_categories2')
         {
-          const Compactness_combat_type4 = formData.get('Compactness_combat_type4');
+          const Compactness_combat_type4 = form.querySelector('input[name="Compactness_combat_type4"]:checked').value;
 
           if (Compactness_combat_type4 === 'Compactness_categories2_categories1')
           {
