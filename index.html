@@ -261,18 +261,22 @@
 <div id="result"></div>
 
 <script>
-  function suggestWeapon()
+  function suggestWeapon(form)
   {
-    // Получаем форму
-    const form = document.getElementById('Weapon_selection');
-
     // Определяем тип интерфейса
-    const combat_type1 = form.querySelector('input[name="combat_type1"]:checked').value;
+    const combat_type1 = form.querySelector('input[name="combat_type1"]:checked');
 
+    if (!combat_type1)
+    {
+        alert("Выберите тип боя!"); // или другая обработка, если тип боя не выбран
+        return;
+    }
+
+      
     let suggestedWeapon = "";
 
     // Логика для ближнего боя
-    if (combat_type1 === 'Melee_combat')
+    if (combat_type1.value === 'Melee_combat')
     {
       const Melee_weapons_combat_type2 = form.querySelector('input[name="Melee_weapons_combat_type2"]:checked').value;
 
@@ -457,7 +461,7 @@
       }
     }
     // Логика для дальнего боя
-    else if (combat_type1 === 'Ranged_combat')
+    else if (combat_type1.value === 'Ranged_combat')
     {
       const Ranged_weapons_combat_type2 = form.querySelector('input[name="Ranged_weapons_combat_type2"]:checked').value;
 
