@@ -272,57 +272,57 @@
     let suggestedWeapon = "";
 
     // Логика для ближнего боя
-    if (combat_type1 == 'Melee_combat')
+    if (combat_type1 === 'Melee_combat')
     {
       const Melee_weapons_combat_type2 = form.querySelector('input[name="Melee_weapons_combat_type2"]:checked').value;
 
-      if (Melee_weapons_combat_type2 == 'One_Handed')
+      if (Melee_weapons_combat_type2 === 'One_Handed')
       {
         const One_Handed_combat_type3 = form.querySelector('input[name="One_Handed_combat_type3"]:checked').value;
         
-        if (One_Handed_combat_type3 == 'One_Handed_categories1')
+        if (One_Handed_combat_type3 === 'One_Handed_categories1')
         {
           const One_Handed_combat_type4_1 = form.querySelector('input[name="One_Handed_combat_type4_1"]:checked').value;
           
-          if (One_Handed_combat_type4_1 == 'One_Handed_categories1_categories1')
+          if (One_Handed_combat_type4_1 === 'One_Handed_categories1_categories1')
           {
             suggestedWeapon = "Одноруч меч";
           }
               
-          else if (One_Handed_combat_type4_1 == 'One_Handed_categories1_categories2')
+          else if (One_Handed_combat_type4_1 === 'One_Handed_categories1_categories2')
           {
             suggestedWeapon = "Сабля";
           }
         }
             
-        else if (One_Handed_combat_type3 == 'One_Handed_categories2')
+        else if (One_Handed_combat_type3 === 'One_Handed_categories2')
         {
           const One_Handed_combat_type4_2 = form.querySelector('input[name="One_Handed_combat_type4_2"]:checked').value;
 
-          if (One_Handed_combat_type4_2 == 'One_Handed_categories2_categories1')
+          if (One_Handed_combat_type4_2 === 'One_Handed_categories2_categories1')
           {
             suggestedWeapon = "Кинжал";
           }
 
-          else if (One_Handed_combat_type4_2 == 'One_Handed_categories2_categories2')
+          else if (One_Handed_combat_type4_2 === 'One_Handed_categories2_categories2')
           {
             const One_Handed_combat_type4_2_1 = form.querySelector('input[name="One_Handed_combat_type4_2_1"]:checked').value;
 
-            if (One_Handed_combat_type4_2_1 == 'One_Handed_categories2_categories2_categories1')
+            if (One_Handed_combat_type4_2_1 === 'One_Handed_categories2_categories2_categories1')
             {
               suggestedWeapon = "Копье";
             }
                 
-            else if (One_Handed_combat_type4_2_1 == 'One_Handed_categories2_categories2_categories2')
+            else if (One_Handed_combat_type4_2_1 === 'One_Handed_categories2_categories2_categories2')
             {
               const One_Handed_combat_type4_2_1_1 = form.querySelector('input[name="One_Handed_combat_type4_2_1_1"]:checked').value;
 
-              if (One_Handed_combat_type4_2_1_1 == 'One_Handed_categories2_categories2_categories2_categories1')
+              if (One_Handed_combat_type4_2_1_1 === 'One_Handed_categories2_categories2_categories2_categories1')
               {
                 suggestedWeapon = "Нож";
               }
                   
-              else if (One_Handed_combat_type4_2_1_1 == 'One_Handed_categories2_categories2_categories2_categories2')
+              else if (One_Handed_combat_type4_2_1_1 === 'One_Handed_categories2_categories2_categories2_categories2')
               {
                 suggestedWeapon = "Шпага";
               }
@@ -330,191 +330,191 @@
           }
         }
             
-        else if (One_Handed_combat_type3 == 'One_Handed_categories3')
+        else if (One_Handed_combat_type3 === 'One_Handed_categories3')
         {
           const One_Handed_combat_type4_3 = form.querySelector('input[name="One_Handed_combat_type4_3"]:checked').value;
             
-          if (One_Handed_combat_type4_3 == 'One_Handed_categories3_categories1')
+          if (One_Handed_combat_type4_3 === 'One_Handed_categories3_categories1')
           {
             suggestedWeapon = "Булава";
           }
               
-          else if (One_Handed_combat_type4_3 == 'One_Handed_categories3_categories2')
+          else if (One_Handed_combat_type4_3 === 'One_Handed_categories3_categories2')
           {
             suggestedWeapon = "Одноруч дубина";
           }
         }
             
-        else if (One_Handed_combat_type3 == 'One_Handed_categories4')
+        else if (One_Handed_combat_type3 === 'One_Handed_categories4')
         {
           const One_Handed_combat_type4_4 = form.querySelector('input[name="One_Handed_combat_type4_4"]:checked').value;
             
-          if (One_Handed_combat_type4_4 == 'One_Handed_categories4_categories1')
+          if (One_Handed_combat_type4_4 === 'One_Handed_categories4_categories1')
           {
             suggestedWeapon = "Одноруч топор";
           }
               
-          else if (One_Handed_combat_type4_4 == 'One_Handed_categories4_categories2')
+          else if (One_Handed_combat_type4_4 === 'One_Handed_categories4_categories2')
           {
             suggestedWeapon = "Одноруч секира";
           }
         }
             
-        else if (One_Handed_combat_type3 == 'One_Handed_categories5')
+        else if (One_Handed_combat_type3 === 'One_Handed_categories5')
         {
           const One_Handed_combat_type4_5 = form.querySelector('input[name="One_Handed_combat_type4_5"]:checked').value;
             
-          if (One_Handed_combat_type4_5 == 'One_Handed_categories5_categories1')
+          if (One_Handed_combat_type4_5 === 'One_Handed_categories5_categories1')
           {
             suggestedWeapon = "Кистень";
           }
               
-          else if (One_Handed_combat_type4_5 == 'One_Handed_categories5_categories2')
+          else if (One_Handed_combat_type4_5 === 'One_Handed_categories5_categories2')
           {
             suggestedWeapon = "Нунчаки";
           }
         }
             
-        else if (One_Handed_combat_type3 == 'One_Handed_categories6')
+        else if (One_Handed_combat_type3 === 'One_Handed_categories6')
         {
           suggestedWeapon = "Глефа";
         }
       }
           
-      else if (Melee_weapons_combat_type2 == 'Two_Handed')
+      else if (Melee_weapons_combat_type2 === 'Two_Handed')
       {
         const Two_Handed_combat_type3 = form.querySelector('input[name="Two_Handed_combat_type3"]:checked').value;
 
-        if (Two_Handed_combat_type3 == 'Two_Handed_categories1')
+        if (Two_Handed_combat_type3 === 'Two_Handed_categories1')
         {
           const Two_Handed_combat_type4_1 = form.querySelector('input[name="Two_Handed_combat_type4_1"]:checked').value;
 
-          if (Two_Handed_combat_type4_1 == 'Two_Handed_categories1_categories1')
+          if (Two_Handed_combat_type4_1 === 'Two_Handed_categories1_categories1')
           {
             suggestedWeapon = "Двуруч меч";
           }
 
-          else if (Two_Handed_combat_type4_1 == 'Two_Handed_categories1_categories2')
+          else if (Two_Handed_combat_type4_1 === 'Two_Handed_categories1_categories2')
           {
             suggestedWeapon = "Катана";
           }
         }
             
-        else if (Two_Handed_combat_type3 == 'Two_Handed_categories2')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories2')
         {
           const Two_Handed_combat_type4_2 = form.querySelector('input[name="Two_Handed_combat_type4_2"]:checked').value;
 
-          if (Two_Handed_combat_type4_2 == 'Two_Handed_categories2_categories1')
+          if (Two_Handed_combat_type4_2 === 'Two_Handed_categories2_categories1')
           {
             suggestedWeapon = "Пика";
           }
 
-          else if (Two_Handed_combat_type4_2 == 'Two_Handed_categories2_categories2')
+          else if (Two_Handed_combat_type4_2 === 'Two_Handed_categories2_categories2')
           {
             suggestedWeapon = "Нагината";
           }
         }
             
-        else if (Two_Handed_combat_type3 == 'Two_Handed_categories3')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories3')
         {
           const Two_Handed_combat_type4_3 = form.querySelector('input[name="Two_Handed_combat_type4_3"]:checked').value;
 
-          if (Two_Handed_combat_type4_3 == 'Two_Handed_categories3_categories1')
+          if (Two_Handed_combat_type4_3 === 'Two_Handed_categories3_categories1')
           {
             suggestedWeapon = "Молот";
           }
 
-          else if (Two_Handed_combat_type4_3 == 'Two_Handed_categories3_categories2')
+          else if (Two_Handed_combat_type4_3 === 'Two_Handed_categories3_categories2')
           {
             suggestedWeapon = "Двуруч дубина";
           }
         }
             
-        else if (Two_Handed_combat_type3 == 'Two_Handed_categories4')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories4')
         {
           const Two_Handed_combat_type4_4 = form.querySelector('input[name="Two_Handed_combat_type4_4"]:checked').value;
 
-          if (Two_Handed_combat_type4_4 == 'Two_Handed_categories4_categories1')
+          if (Two_Handed_combat_type4_4 === 'Two_Handed_categories4_categories1')
           {
             suggestedWeapon = "Двуруч топор";
           }
 
-          else if (Two_Handed_combat_type4_4 == 'Two_Handed_categories4_categories2')
+          else if (Two_Handed_combat_type4_4 === 'Two_Handed_categories4_categories2')
           {
             suggestedWeapon = "Двуруч секира";
           }
         }
             
-        else if (Two_Handed_combat_type3 == 'Two_Handed_categories5')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories5')
         {
           suggestedWeapon = "Кусаригма";
         }
             
-        else if (Two_Handed_combat_type3 == 'Two_Handed_categories6')
+        else if (Two_Handed_combat_type3 === 'Two_Handed_categories6')
         {
           suggestedWeapon = "Алебарда";
         }
       }
     }
     // Логика для дальнего боя
-    else if (combat_type1 == 'Ranged_combat')
+    else if (combat_type1 === 'Ranged_combat')
     {
       const Ranged_weapons_combat_type2 = form.querySelector('input[name="Ranged_weapons_combat_type2"]:checked').value;
 
-      if (Ranged_weapons_combat_type2 == 'Range')
+      if (Ranged_weapons_combat_type2 === 'Range')
       {
         const Range_combat_type3 = form.querySelector('input[name="Range_combat_type3"]:checked').value;
 
-        if (Range_combat_type3 == 'Range_categories1')
+        if (Range_combat_type3 === 'Range_categories1')
         {
           suggestedWeapon = "Длинный лук";
         }
 
-        else if (Range_combat_type3 == 'Range_categories2')
+        else if (Range_combat_type3 === 'Range_categories2')
         {
           suggestedWeapon = "Короткий лук";
         }
 
-        else if (Range_combat_type3 == 'Range_categories3')
+        else if (Range_combat_type3 === 'Range_categories3')
         {
           suggestedWeapon = "Рефлексивный лук";
         }
       }
 
-      else if (Ranged_weapons_combat_type2 == 'Power')
+      else if (Ranged_weapons_combat_type2 === 'Power')
       {
         const Power_combat_type3 = form.querySelector('input[name="Power_combat_type3"]:checked').value;
         
-        if (Power_combat_type3 == 'Power_categories1')
+        if (Power_combat_type3 === 'Power_categories1')
         {
           suggestedWeapon = "Легкий арбалет";
         }
 
-        else if (Power_combat_type3 == 'Power_categories2')
+        else if (Power_combat_type3 === 'Power_categories2')
         {
           suggestedWeapon = "Тяжелый арбалет";
         }
       }
 
-      else if (Ranged_weapons_combat_type2 == 'Compactness')
+      else if (Ranged_weapons_combat_type2 === 'Compactness')
       {
         const Compactness_combat_type3 = form.querySelector('input[name="Compactness_combat_type3"]:checked').value;
 
-        if (Compactness_combat_type3 == 'Compactness_categories1')
+        if (Compactness_combat_type3 === 'Compactness_categories1')
         {
           suggestedWeapon = "Праща";
         }
 
-        else if (Compactness_combat_type3 == 'Compactness_categories2')
+        else if (Compactness_combat_type3 === 'Compactness_categories2')
         {
           const Compactness_combat_type4 = form.querySelector('input[name="Compactness_combat_type4"]:checked').value;
 
-          if (Compactness_combat_type4 == 'Compactness_categories2_categories1')
+          if (Compactness_combat_type4 === 'Compactness_categories2_categories1')
           {
             suggestedWeapon = "Кунаи";
           }
 
-          else if (Compactness_combat_type4 == 'Compactness_categories2_categories2')
+          else if (Compactness_combat_type4 === 'Compactness_categories2_categories2')
           {
             suggestedWeapon = "Сюрикены";
           }
