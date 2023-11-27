@@ -103,7 +103,7 @@
             </label>
             
                 <label id="One_Handed_categories1_categories" style="display: none;">
-                  <strong>4. Географічна класифікація зброї:</strong>
+                  <strong>4. Оберіть географічну класифікацію зброї:</strong>
                   <br>
                   <input type="radio" name="One_Handed_combat_type4_1" value="One_Handed_categories1_categories1" required> Західна
                   <br>
@@ -111,7 +111,7 @@
                 </label>
             
                 <label id="One_Handed_categories2_categories" style="display: none;">
-                  <strong>4. Географічна класифікація зброї:</strong>
+                  <strong>4. Оберіть географічну класифікацію зброї:</strong>
                   <br>
                   <input type="radio" name="One_Handed_combat_type4_2" value="One_Handed_categories2_categories1" required> Західна
                   <br>
@@ -119,19 +119,19 @@
                 </label>
                 
                     <label id="One_Handed_categories2_categories1_categories" style="display: none;">
-                      <strong>5. С лезвием/без лезвия:</strong>
+                      <strong>5. Оберіть наявність леза:</strong>
                       <br>
-                      <input type="radio" name="One_Handed_combat_type4_2_1" value="One_Handed_categories2_categories2_categories1" required> Без лезвия
+                      <input type="radio" name="One_Handed_combat_type4_2_1" value="One_Handed_categories2_categories2_categories1" required> З лезом
                       <br>
-                      <input type="radio" name="One_Handed_combat_type4_2_1" value="One_Handed_categories2_categories2_categories2" required> С лезвием
+                      <input type="radio" name="One_Handed_combat_type4_2_1" value="One_Handed_categories2_categories2_categories2" required> Без леза
                     </label>
                     
-                        <label id="One_Handed_categories2_categories2_categories2_categories" style="display: none;">
-                          <strong>6. Компактность/дальность:</strong>
+                        <label id="One_Handed_categories2_categories2_categories1_categories" style="display: none;">
+                          <strong>6. Виберіть потрібний параметр зброї:</strong>
                           <br>
-                          <input type="radio" name="One_Handed_combat_type4_2_1_1" value="One_Handed_categories2_categories2_categories2_categories1" required> Компактность
+                          <input type="radio" name="One_Handed_combat_type4_2_1_1" value="One_Handed_categories2_categories2_categories2_categories1" required> Компактність
                           <br>
-                          <input type="radio" name="One_Handed_combat_type4_2_1_1" value="One_Handed_categories2_categories2_categories2_categories2" required> Дальность
+                          <input type="radio" name="One_Handed_combat_type4_2_1_1" value="One_Handed_categories2_categories2_categories2_categories2" required> Дальність ураження
                         </label>                        
             
                 <label id="One_Handed_categories3_categories" style="display: none;">
@@ -145,9 +145,9 @@
                 <label id="One_Handed_categories4_categories" style="display: none;">
                   <strong>4. Оберіть тип леза:</strong>
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_4" value="One_Handed_categories4_categories1" required> Одностороннє
+                  <input type="radio" name="One_Handed_combat_type4_4" value="One_Handed_categories4_categories1" required> Однобічне
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_4" value="One_Handed_categories4_categories2" required> Двостороннє
+                  <input type="radio" name="One_Handed_combat_type4_4" value="One_Handed_categories4_categories2" required> Двобічне
                 </label>
             
                 <label id="One_Handed_categories5_categories" style="display: none;">
@@ -201,9 +201,9 @@
                 <label id="Two_Handed_categories4_categories" style="display: none;">
                   <strong>4. Оберіть тип леза:</strong>
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_4" value="Two_Handed_categories4_categories1" required> Одностороннє
+                  <input type="radio" name="Two_Handed_combat_type4_4" value="Two_Handed_categories4_categories1" required> Однобічне
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_4" value="Two_Handed_categories4_categories2" required> Двостороннє
+                  <input type="radio" name="Two_Handed_combat_type4_4" value="Two_Handed_categories4_categories2" required> Двобічне
                 </label>
 
         <label id="Ranged_weapons" style="display: none;">
@@ -288,12 +288,12 @@
           
           if (One_Handed_combat_type4_1 === 'One_Handed_categories1_categories1')
           {
-            suggestedWeapon = "Одноруч меч";
+            suggestedWeapon = "Одноручний меч";
           }
               
           else if (One_Handed_combat_type4_1 === 'One_Handed_categories1_categories2')
           {
-            suggestedWeapon = "Сабля";
+            suggestedWeapon = "Шабля";
           }
         }
             
@@ -306,20 +306,15 @@
           {
             document.getElementById('One_Handed_categories2_categories1_categories').style.display = 'block';
             const One_Handed_combat_type4_2_1 = form.querySelector('input[name="One_Handed_combat_type4_2_1"]:checked').value;
-
+                
             if (One_Handed_combat_type4_2_1 === 'One_Handed_categories2_categories2_categories1')
             {
-              suggestedWeapon = "Копье";
-            }
-                
-            else if (One_Handed_combat_type4_2_1 === 'One_Handed_categories2_categories2_categories2')
-            {
-              document.getElementById('One_Handed_categories2_categories2_categories2_categories').style.display = 'block';
+              document.getElementById('One_Handed_categories2_categories2_categories1_categories').style.display = 'block';
               const One_Handed_combat_type4_2_1_1 = form.querySelector('input[name="One_Handed_combat_type4_2_1_1"]:checked').value;
 
               if (One_Handed_combat_type4_2_1_1 === 'One_Handed_categories2_categories2_categories2_categories1')
               {
-                suggestedWeapon = "Нож";
+                suggestedWeapon = "Ніж";
               }
                   
               else if (One_Handed_combat_type4_2_1_1 === 'One_Handed_categories2_categories2_categories2_categories2')
@@ -327,11 +322,16 @@
                 suggestedWeapon = "Шпага";
               }
             }
+            
+            else if (One_Handed_combat_type4_2_1 === 'One_Handed_categories2_categories2_categories2')
+            {
+              suggestedWeapon = "Спис";
+            }
           }
           
           else if (One_Handed_combat_type4_2 === 'One_Handed_categories2_categories2')
           {
-            suggestedWeapon = "Кинжал";
+            suggestedWeapon = "Кинджал";
           }
 
         }
@@ -348,7 +348,7 @@
               
           else if (One_Handed_combat_type4_3 === 'One_Handed_categories3_categories2')
           {
-            suggestedWeapon = "Одноруч дубина";
+            suggestedWeapon = "Одноручна палиця";
           }
         }
             
@@ -359,12 +359,12 @@
             
           if (One_Handed_combat_type4_4 === 'One_Handed_categories4_categories1')
           {
-            suggestedWeapon = "Одноруч топор";
+            suggestedWeapon = "Одноручна бойова сокира";
           }
               
           else if (One_Handed_combat_type4_4 === 'One_Handed_categories4_categories2')
           {
-            suggestedWeapon = "Одноруч секира";
+            suggestedWeapon = "Одноручна секира";
           }
         }
             
@@ -375,7 +375,7 @@
             
           if (One_Handed_combat_type4_5 === 'One_Handed_categories5_categories1')
           {
-            suggestedWeapon = "Кистень";
+            suggestedWeapon = "Кістень";
           }
               
           else if (One_Handed_combat_type4_5 === 'One_Handed_categories5_categories2')
@@ -402,7 +402,7 @@
 
           if (Two_Handed_combat_type4_1 === 'Two_Handed_categories1_categories1')
           {
-            suggestedWeapon = "Двуруч меч";
+            suggestedWeapon = "Дворучний меч";
           }
 
           else if (Two_Handed_combat_type4_1 === 'Two_Handed_categories1_categories2')
@@ -418,12 +418,12 @@
 
           if (Two_Handed_combat_type4_2 === 'Two_Handed_categories2_categories1')
           {
-            suggestedWeapon = "Пика";
+            suggestedWeapon = "Піка";
           }
 
           else if (Two_Handed_combat_type4_2 === 'Two_Handed_categories2_categories2')
           {
-            suggestedWeapon = "Нагината";
+            suggestedWeapon = "Наґіната";
           }
         }
             
@@ -434,12 +434,12 @@
 
           if (Two_Handed_combat_type4_3 === 'Two_Handed_categories3_categories1')
           {
-            suggestedWeapon = "Молот";
+            suggestedWeapon = "Бойовий молот";
           }
 
           else if (Two_Handed_combat_type4_3 === 'Two_Handed_categories3_categories2')
           {
-            suggestedWeapon = "Двуруч дубина";
+            suggestedWeapon = "Дворучна палиця";
           }
         }
             
@@ -450,18 +450,18 @@
 
           if (Two_Handed_combat_type4_4 === 'Two_Handed_categories4_categories1')
           {
-            suggestedWeapon = "Двуруч топор";
+            suggestedWeapon = "Дворучна бойова сокира";
           }
 
           else if (Two_Handed_combat_type4_4 === 'Two_Handed_categories4_categories2')
           {
-            suggestedWeapon = "Двуруч секира";
+            suggestedWeapon = "Дворучна секира";
           }
         }
             
         else if (Two_Handed_combat_type3 === 'Two_Handed_categories5')
         {
-          suggestedWeapon = "Кусаригма";
+          suggestedWeapon = "Кусарігама";
         }
             
         else if (Two_Handed_combat_type3 === 'Two_Handed_categories6')
@@ -483,7 +483,7 @@
 
         if (Range_combat_type3 === 'Range_categories1')
         {
-          suggestedWeapon = "Длинный лук";
+          suggestedWeapon = "Довгий лук";
         }
 
         else if (Range_combat_type3 === 'Range_categories2')
@@ -493,7 +493,7 @@
 
         else if (Range_combat_type3 === 'Range_categories3')
         {
-          suggestedWeapon = "Рефлексивный лук";
+          suggestedWeapon = "Рефлексивний лук";
         }
       }
 
@@ -509,12 +509,12 @@
 
         else if (Power_combat_type3 === 'Power_categories2')
         {
-          suggestedWeapon = "Тяжелый арбалет";
+          suggestedWeapon = "Важкий арбалетт";
         }
         
         else if (Power_combat_type3 === 'Power_categories3')
         {
-          suggestedWeapon = "Средний арбалет";
+          suggestedWeapon = "Середній арбалет";
         }
       }
 
@@ -535,19 +535,19 @@
 
           if (Compactness_combat_type4 === 'Compactness_categories2_categories1')
           {
-            suggestedWeapon = "Кунаи";
+            suggestedWeapon = "Кунаї";
           }
 
           else if (Compactness_combat_type4 === 'Compactness_categories2_categories2')
           {
-            suggestedWeapon = "Сюрикены";
+            suggestedWeapon = "Сюрікени";
           }
         }
       }
      
       else if (Ranged_weapons_combat_type2 === 'Versatility')
       {
-        suggestedWeapon = "Дротики (метательные копья)";
+        suggestedWeapon = "Дротики (метальні списи))";
       }
     }
 
