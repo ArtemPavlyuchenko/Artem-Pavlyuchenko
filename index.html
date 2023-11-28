@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  	<!-- Мета-теги для налаштування документа: -->
+    <!-- Мета-теги для налаштування документа: -->
     <meta charset="UTF-8"> <!-- Кодування документа (UTF-8 для підтримки різних символів та мов) -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Налаштування відображення на різних пристроях -->
     <title>Вибір середньовічної зброї</title> <!-- Заголовок сторінки, що відображається в браузері або на вкладці -->
   	
-  	<!-- Стилі для стилізації елементів сторінки: -->
+    <!-- Стилі для стилізації елементів сторінки: -->
     <style>
          body
       	 {
@@ -69,7 +69,7 @@
 
  <!-- Форма для вибору параметрів зброї: -->
 <form id="Weapon_selection">
-  	<!-- Варінати категорій зброї: -->
+    <!-- Варінати категорій зброї: -->
     <label>
       <strong>1. Оберіть категорію зброї:</strong>
       <br>
@@ -78,7 +78,7 @@
       <input type="radio" name="combat_type1" value="Ranged_combat" required> Дальнього бою
     </label>
   
-  		<!-- Варіанти зброї ближнього бою: -->
+  	<!-- Варіанти зброї ближнього бою: -->
         <label id="Melee_weapons" style="display: none;">
           <strong>2. Оберіть вид зброї ближнього бою:</strong>
           <br>
@@ -87,7 +87,7 @@
           <input type="radio" name="Melee_weapons_combat_type2" value="Two_Handed" required> Дворучна
         </label>
                       
-  			<!-- Варіанти одноручної зброї ближнього бою: -->
+  	    <!-- Варіанти одноручної зброї ближнього бою: -->
             <label id="One_Handed_categories" style="display: none;">
               <strong>3. Оберіть тип одноручної зброї:</strong>
               <br>
@@ -104,7 +104,7 @@
               <input type="radio" name="One_Handed_combat_type3" value="One_Handed_categories6" required> Колюче-рубаюча
             </label>
             	
-  				<!-- Варіанти разючої одноручної зброї: -->
+  		<!-- Варіанти разючої одноручної зброї: -->
                 <label id="One_Handed_categories1_categories" style="display: none;">
                   <strong>4. Оберіть географічну класифікацію зброї:</strong>
                   <br>
@@ -113,7 +113,7 @@
                   <input type="radio" name="One_Handed_combat_type4_1" value="One_Handed_categories1_categories2" required> Східна
                 </label>
             
-  				<!-- Варіанти колючої одноручної зброї: -->
+  		<!-- Варіанти колючої одноручної зброї: -->
                 <label id="One_Handed_categories2_categories" style="display: none;">
                   <strong>4. Оберіть географічну класифікацію зброї:</strong>
                   <br>
@@ -122,7 +122,7 @@
                   <input type="radio" name="One_Handed_combat_type4_2" value="One_Handed_categories2_categories2" required> Східна
                 </label>
                 
-  					<!-- Варіанти західної колючої одноручної зброї: -->
+  		    <!-- Варіанти західної колючої одноручної зброї: -->
                     <label id="One_Handed_categories2_categories1_categories" style="display: none;">
                       <strong>5. Оберіть наявність леза:</strong>
                       <br>
@@ -131,7 +131,7 @@
                       <input type="radio" name="One_Handed_combat_type4_2_1" value="One_Handed_categories2_categories2_categories2" required> Без леза
                     </label>
                     
-  						<!-- Варіанти західної колючої одноручної зброї з лезом: -->
+  			<!-- Варіанти західної колючої одноручної зброї з лезом: -->
                         <label id="One_Handed_categories2_categories2_categories1_categories" style="display: none;">
                           <strong>6. Оберіть потрібний параметр зброї:</strong>
                           <br>
@@ -140,7 +140,7 @@
                           <input type="radio" name="One_Handed_combat_type4_2_1_1" value="One_Handed_categories2_categories2_categories2_categories2" required> Дальність ураження
                         </label>                        
             
-  				<!-- Варіанти тупої одноручної зброї: -->
+  		<!-- Варіанти тупої одноручної зброї: -->
                 <label id="One_Handed_categories3_categories" style="display: none;">
                   <strong>4. Оберіть матеріал зброї:</strong>
                   <br>
@@ -149,7 +149,7 @@
                   <input type="radio" name="One_Handed_combat_type4_3" value="One_Handed_categories3_categories2" required> Дерево
                 </label>
             
-  				<!-- Варіанти рубаючої одноручної зброї: -->
+  		<!-- Варіанти рубаючої одноручної зброї: -->
                 <label id="One_Handed_categories4_categories" style="display: none;">
                   <strong>4. Оберіть тип леза:</strong>
                   <br>
@@ -158,7 +158,7 @@
                   <input type="radio" name="One_Handed_combat_type4_4" value="One_Handed_categories4_categories2" required> Двобічне
                 </label>
             
-  				<!-- Варіанти обертальної одноручної зброї: -->
+  		<!-- Варіанти обертальної одноручної зброї: -->
                 <label id="One_Handed_categories5_categories" style="display: none;">
                   <strong>4. Географічна класифікація зброї:</strong>
                   <br>
@@ -167,7 +167,7 @@
                   <input type="radio" name="One_Handed_combat_type4_5" value="One_Handed_categories5_categories2" required> Східна
                 </label>
 
-  			<!-- Варіанти дворучної зброї ближнього бою: -->
+  	    <!-- Варіанти дворучної зброї ближнього бою: -->
             <label id="Two_Handed_categories" style="display: none;">
               <strong>3. Оберіть тип дворучної зброї:</strong>
               <br>
@@ -184,7 +184,7 @@
               <input type="radio" name="Two_Handed_combat_type3" value="Two_Handed_categories6" required> Колюче-рубаюча
             </label>
 
-  				<!-- Варіанти разючої дворучної зброї: -->
+  		<!-- Варіанти разючої дворучної зброї: -->
                 <label id="Two_Handed_categories1_categories" style="display: none;">
                   <strong>4. Географічна класифікація зброї:</strong>
                   <br>
@@ -193,7 +193,7 @@
                   <input type="radio" name="Two_Handed_combat_type4_1" value="Two_Handed_categories1_categories2" required> Східна
                 </label>
 
-  				<!-- Варіанти колючої дворучної зброї: -->
+  		<!-- Варіанти колючої дворучної зброї: -->
                 <label id="Two_Handed_categories2_categories" style="display: none;">
                   <strong>4. Географічна класифікація зброї:</strong>
                   <br>
@@ -202,7 +202,7 @@
                   <input type="radio" name="Two_Handed_combat_type4_2" value="Two_Handed_categories2_categories2" required> Східна
                 </label>
 
-  				<!-- Варіанти тупої дворучної зброї: -->
+  		<!-- Варіанти тупої дворучної зброї: -->
                 <label id="Two_Handed_categories3_categories" style="display: none;">
                   <strong>4. Оберіть матеріал зброї:</strong>
                   <br>
@@ -211,7 +211,7 @@
                   <input type="radio" name="Two_Handed_combat_type4_3" value="Two_Handed_categories3_categories2" required> Дерево
                 </label>
 
-  				<!-- Варіанти рубаючої дворучної зброї: -->
+  		<!-- Варіанти рубаючої дворучної зброї: -->
                 <label id="Two_Handed_categories4_categories" style="display: none;">
                   <strong>4. Оберіть тип леза:</strong>
                   <br>
@@ -220,7 +220,7 @@
                   <input type="radio" name="Two_Handed_combat_type4_4" value="Two_Handed_categories4_categories2" required> Двобічне
                 </label>
 
-  		<!-- Варіанти зброї дального бою: -->
+  	<!-- Варіанти зброї дального бою: -->
         <label id="Ranged_weapons" style="display: none;">
           <strong>2. Оберіть основний параметр зброї:</strong>
           <br>
@@ -233,7 +233,7 @@
           <input type="radio" name="Ranged_weapons_combat_type2" value="Versatility" required> Універсальність
         </label>
 			
-  			<!-- Варіанти основного параметру - дальності стрільби: -->
+  	    <!-- Варіанти основного параметру - дальності стрільби: -->
             <label id="Range_categories" style="display: none;">
               <strong>3. Оберіть вторинний параметр зброї:</strong>
               <br>
@@ -244,7 +244,7 @@
               <input type="radio" name="Range_combat_type3" value="Range_categories3" required> Баланс між дальністю та швидкістю стрільби
             </label>
   
-  			<!-- Варіанти основного параметру - потужності: -->
+  	    <!-- Варіанти основного параметру - потужності: -->
             <label id="Power_categories" style="display: none;">
               <strong>3. Оберіть вторинний параметр зброї:</strong>
               <br>
@@ -255,7 +255,7 @@
               <input type="radio" name="Power_combat_type3" value="Power_categories3" required> Баланс між зручністю та потужністю
             </label>
 
-  			<!-- Варіанти основного параметру - компактності: -->
+  	    <!-- Варіанти основного параметру - компактності: -->
             <label id="Compactness_categories" style="display: none;">
               <strong>3. Оберіть вторинний параметр зброї:</strong>
               <br>
@@ -264,7 +264,7 @@
               <input type="radio" name="Compactness_combat_type3" value="Compactness_categories2" required> Точність стрільби
             </label>
 				
-  				<!-- Варіанти вторинного параметру - точності стрільби: -->
+  		<!-- Варіанти вторинного параметру - точності стрільби: -->
                 <label id="Compactness_categories2_categories" style="display: none;">
                   <strong>4. Оберіть третинний параметр зброї:</strong>
                   <br>
