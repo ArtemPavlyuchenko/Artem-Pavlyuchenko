@@ -73,204 +73,204 @@
     <label>
       <strong>1. Оберіть категорію зброї:</strong>
       <br>
-      <input type="radio" name="combat_type1" value="Melee_combat" required> Ближнього бою
+      <input type="radio" name="Weapon_category" value="Melee_combat" required> Ближнього бою
       <br>
-      <input type="radio" name="combat_type1" value="Ranged_combat" required> Дальнього бою
+      <input type="radio" name="Weapon_category" value="Ranged_combat" required> Дальнього бою
     </label>
   
   	<!-- Варіанти зброї ближнього бою: -->
         <label id="Melee_weapons" style="display: none;">
           <strong>2. Оберіть вид зброї ближнього бою:</strong>
           <br>
-          <input type="radio" name="Melee_weapons_combat_type2" value="One_Handed" required> Одноручна
+          <input type="radio" name="Melee_weapon_kind" value="One_Handed" required> Одноручна
           <br>
-          <input type="radio" name="Melee_weapons_combat_type2" value="Two_Handed" required> Дворучна
+          <input type="radio" name="Melee_weapon_kind" value="Two_Handed" required> Дворучна
         </label>
                       
   	    <!-- Варіанти одноручної зброї ближнього бою: -->
             <label id="One_Handed_weapons" style="display: none;">
               <strong>3. Оберіть тип одноручної зброї:</strong>
               <br>
-              <input type="radio" name="One_Handed_combat_type3" value="One_Handed_smashing" required> Разюча
+              <input type="radio" name="One_Handed_type" value="One_Handed_smashing" required> Разюча
               <br>
-              <input type="radio" name="One_Handed_combat_type3" value="One_Handed_stabbing" required> Колюча
+              <input type="radio" name="One_Handed_type" value="One_Handed_stabbing" required> Колюча
               <br>
-              <input type="radio" name="One_Handed_combat_type3" value="One_Handed_blunt" required> Тупа
+              <input type="radio" name="One_Handed_type" value="One_Handed_blunt" required> Тупа
               <br>
-              <input type="radio" name="One_Handed_combat_type3" value="One_Handed_slashing" required> Рубаюча
+              <input type="radio" name="One_Handed_type" value="One_Handed_slashing" required> Рубаюча
               <br>
-              <input type="radio" name="One_Handed_combat_type3" value="One_Handed_rotating" required> Обертальна
+              <input type="radio" name="One_Handed_type" value="One_Handed_rotating" required> Обертальна
               <br>
-              <input type="radio" name="One_Handed_combat_type3" value="One_Handed_stabbing_slashing" required> Колюче-рубаюча
+              <input type="radio" name="One_Handed_type" value="One_Handed_stabbing_slashing" required> Колюче-рубаюча
             </label>
             	
   		<!-- Варіанти разючої одноручної зброї: -->
                 <label id="One_Handed_smashing_weapons" style="display: none;">
                   <strong>4. Оберіть географічну класифікацію зброї:</strong>
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_1" value="One_Handed_smashing_western" required> Західна
+                  <input type="radio" name="One_Handed_smashing_classification" value="One_Handed_smashing_western" required> Західна
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_1" value="One_Handed_smashing_eastern" required> Східна
+                  <input type="radio" name="One_Handed_smashing_classification" value="One_Handed_smashing_eastern" required> Східна
                 </label>
             
   		<!-- Варіанти колючої одноручної зброї: -->
                 <label id="One_Handed_stabbing_weapons" style="display: none;">
                   <strong>4. Оберіть географічну класифікацію зброї:</strong>
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_2" value="One_Handed_stabbing_western" required> Західна
+                  <input type="radio" name="One_Handed_stabbing_classification" value="One_Handed_stabbing_western" required> Західна
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_2" value="One_Handed_stabbing_eastern" required> Східна
+                  <input type="radio" name="One_Handed_stabbing_classification" value="One_Handed_stabbing_eastern" required> Східна
                 </label>
                 
   		    <!-- Варіанти західної колючої одноручної зброї: -->
                     <label id="One_Handed_stabbing_western_weapons" style="display: none;">
                       <strong>5. Оберіть наявність леза:</strong>
                       <br>
-                      <input type="radio" name="One_Handed_combat_type4_2_1" value="One_Handed_stabbing_western_with_blade" required> З лезом
+                      <input type="radio" name="One_Handed_stabbing_western_blade_presence" value="One_Handed_stabbing_western_with_blade" required> З лезом
                       <br>
-                      <input type="radio" name="One_Handed_combat_type4_2_1" value="One_Handed_stabbing_western_without_blade" required> Без леза
+                      <input type="radio" name="One_Handed_stabbing_western_blade_presence" value="One_Handed_stabbing_western_without_blade" required> Без леза
                     </label>
                     
   			<!-- Варіанти західної колючої одноручної зброї з лезом: -->
                         <label id="One_Handed_stabbing_western_with_blade_weapons" style="display: none;">
                           <strong>6. Оберіть потрібний параметр зброї:</strong>
                           <br>
-                          <input type="radio" name="One_Handed_combat_type4_2_1_1" value="One_Handed_stabbing_western_with_blade_compactness" required> Компактність
+                          <input type="radio" name="One_Handed_stabbing_western_with_blade_parameter" value="One_Handed_stabbing_western_with_blade_compactness" required> Компактність
                           <br>
-                          <input type="radio" name="One_Handed_combat_type4_2_1_1" value="One_Handed_stabbing_western_with_blade_range" required> Дальність ураження
+                          <input type="radio" name="One_Handed_stabbing_western_with_blade_parameter" value="One_Handed_stabbing_western_with_blade_range" required> Дальність ураження
                         </label>                        
             
   		<!-- Варіанти тупої одноручної зброї: -->
                 <label id="One_Handed_blunt_weapons" style="display: none;">
                   <strong>4. Оберіть матеріал зброї:</strong>
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_3" value="One_Handed_blunt_metal" required> Метал
+                  <input type="radio" name="One_Handed_blunt_material" value="One_Handed_blunt_metal" required> Метал
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_3" value="One_Handed_blunt_wood" required> Дерево
+                  <input type="radio" name="One_Handed_blunt_material" value="One_Handed_blunt_wood" required> Дерево
                 </label>
             
   		<!-- Варіанти рубаючої одноручної зброї: -->
                 <label id="One_Handed_slashing_weapons" style="display: none;">
                   <strong>4. Оберіть тип леза:</strong>
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_4" value="One_Handed_slashing_single_sided" required> Однобічне
+                  <input type="radio" name="One_Handed_slashing_blade_type" value="One_Handed_slashing_single_sided" required> Однобічне
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_4" value="One_Handed_slashing_double_sided" required> Двобічне
+                  <input type="radio" name="One_Handed_slashing_blade_type" value="One_Handed_slashing_double_sided" required> Двобічне
                 </label>
             
   		<!-- Варіанти обертальної одноручної зброї: -->
                 <label id="One_Handed_rotating_weapons" style="display: none;">
                   <strong>4. Географічна класифікація зброї:</strong>
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_5" value="One_Handed_rotating_western" required> Західна
+                  <input type="radio" name="One_Handed_rotating_classification" value="One_Handed_rotating_western" required> Західна
                   <br>
-                  <input type="radio" name="One_Handed_combat_type4_5" value="One_Handed_rotating_eastern" required> Східна
+                  <input type="radio" name="One_Handed_rotating_classification" value="One_Handed_rotating_eastern" required> Східна
                 </label>
 
   	    <!-- Варіанти дворучної зброї ближнього бою: -->
             <label id="Two_Handed_weapons" style="display: none;">
               <strong>3. Оберіть тип дворучної зброї:</strong>
               <br>
-              <input type="radio" name="Two_Handed_combat_type3" value="Two_Handed_smashing" required> Разюча
+              <input type="radio" name="Two_Handed_type" value="Two_Handed_smashing" required> Разюча
               <br>
-              <input type="radio" name="Two_Handed_combat_type3" value="Two_Handed_stabbing" required> Колюча
+              <input type="radio" name="Two_Handed_type" value="Two_Handed_stabbing" required> Колюча
               <br>
-              <input type="radio" name="Two_Handed_combat_type3" value="Two_Handed_blunt" required> Тупа
+              <input type="radio" name="Two_Handed_type" value="Two_Handed_blunt" required> Тупа
               <br>
-              <input type="radio" name="Two_Handed_combat_type3" value="Two_Handed_slashing" required> Рубаюча
+              <input type="radio" name="Two_Handed_type" value="Two_Handed_slashing" required> Рубаюча
               <br>
-              <input type="radio" name="Two_Handed_combat_type3" value="Two_Handed_rotating" required> Обертальна
+              <input type="radio" name="Two_Handed_type" value="Two_Handed_rotating" required> Обертальна
               <br>
-              <input type="radio" name="Two_Handed_combat_type3" value="Two_Handed_stabbing_slashing" required> Колюче-рубаюча
+              <input type="radio" name="Two_Handed_type" value="Two_Handed_stabbing_slashing" required> Колюче-рубаюча
             </label>
 
   		<!-- Варіанти разючої дворучної зброї: -->
                 <label id="Two_Handed_smashing_weapons" style="display: none;">
                   <strong>4. Географічна класифікація зброї:</strong>
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_1" value="Two_Handed_smashing_western" required> Західна
+                  <input type="radio" name="Two_Handed_smashing_classification" value="Two_Handed_smashing_western" required> Західна
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_1" value="Two_Handed_smashing_eastern" required> Східна
+                  <input type="radio" name="Two_Handed_smashing_classification" value="Two_Handed_smashing_eastern" required> Східна
                 </label>
 
   		<!-- Варіанти колючої дворучної зброї: -->
                 <label id="Two_Handed_stabbing_weapons" style="display: none;">
                   <strong>4. Географічна класифікація зброї:</strong>
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_2" value="Two_Handed_stabbing_western" required> Західна
+                  <input type="radio" name="Two_Handed_stabbing_combat_classification" value="Two_Handed_stabbing_western" required> Західна
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_2" value="Two_Handed_stabbing_eastern" required> Східна
+                  <input type="radio" name="Two_Handed_stabbing_combat_classification" value="Two_Handed_stabbing_eastern" required> Східна
                 </label>
 
   		<!-- Варіанти тупої дворучної зброї: -->
                 <label id="Two_Handed_blunt_weapons" style="display: none;">
                   <strong>4. Оберіть матеріал зброї:</strong>
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_3" value="Two_Handed_blunt_metal" required> Метал
+                  <input type="radio" name="Two_Handed_blunt_material" value="Two_Handed_blunt_metal" required> Метал
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_3" value="Two_Handed_blunt_wood" required> Дерево
+                  <input type="radio" name="Two_Handed_blunt_material" value="Two_Handed_blunt_wood" required> Дерево
                 </label>
 
   		<!-- Варіанти рубаючої дворучної зброї: -->
                 <label id="Two_Handed_slashing_weapons" style="display: none;">
                   <strong>4. Оберіть тип леза:</strong>
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_4" value="Two_Handed_slashing_single_sided" required> Однобічне
+                  <input type="radio" name="Two_Handed_slashing_blade_type" value="Two_Handed_slashing_single_sided" required> Однобічне
                   <br>
-                  <input type="radio" name="Two_Handed_combat_type4_4" value="Two_Handed_slashing_double_sided" required> Двобічне
+                  <input type="radio" name="Two_Handed_slashing_blade_type" value="Two_Handed_slashing_double_sided" required> Двобічне
                 </label>
 
-  	<!-- Варіанти зброї дального бою: -->
+  	<!-- Варіанти основного параметра зброї дального бою: -->
         <label id="Ranged_weapons" style="display: none;">
           <strong>2. Оберіть основний параметр зброї:</strong>
           <br>
-          <input type="radio" name="Ranged_weapons_combat_type2" value="Range" required> Дальність стрільби
+          <input type="radio" name="Ranged_weapons_main_parameter" value="Range" required> Дальність стрільби
           <br>
-          <input type="radio" name="Ranged_weapons_combat_type2" value="Power" required> Потужність
+          <input type="radio" name="Ranged_weapons_main_parameter" value="Power" required> Потужність
           <br>
-          <input type="radio" name="Ranged_weapons_combat_type2" value="Compactness" required> Компактність
+          <input type="radio" name="Ranged_weapons_main_parameter" value="Compactness" required> Компактність
           <br>
-          <input type="radio" name="Ranged_weapons_combat_type2" value="Versatility" required> Універсальність
+          <input type="radio" name="Ranged_weapons_main_parameter" value="Versatility" required> Універсальність
         </label>
 			
-  	    <!-- Варіанти основного параметру - дальності стрільби: -->
+  	    <!-- Варіанти вторинного параметра для дальності стрільби: -->
             <label id="Range_parameters" style="display: none;">
               <strong>3. Оберіть вторинний параметр зброї:</strong>
               <br>
-              <input type="radio" name="Range_combat_type3" value="Range_range" required> Дальність стрільби
+              <input type="radio" name="Range_secondary_parameter" value="Range_range" required> Дальність стрільби
               <br>
-              <input type="radio" name="Range_combat_type3" value="Range_speed" required> Швидкість стрільби
+              <input type="radio" name="Range_secondary_parameter" value="Range_speed" required> Швидкість стрільби
               <br>
-              <input type="radio" name="Range_combat_type3" value="Range_balance" required> Баланс між дальністю та швидкістю стрільби
+              <input type="radio" name="Range_secondary_parameter" value="Range_balance" required> Баланс між дальністю та швидкістю стрільби
             </label>
   
-  	    <!-- Варіанти основного параметру - потужності: -->
+  	    <!-- Варіанти вторинного параметра для потужності: -->
             <label id="Power_parameters" style="display: none;">
               <strong>3. Оберіть вторинний параметр зброї:</strong>
               <br>
-              <input type="radio" name="Power_combat_type3" value="Power_convenience" required> Зручність
+              <input type="radio" name="Power_secondary_parameter" value="Power_convenience" required> Зручність
               <br>
-              <input type="radio" name="Power_combat_type3" value="Power_power" required> Потужність
+              <input type="radio" name="Power_secondary_parameter" value="Power_power" required> Потужність
               <br>
-              <input type="radio" name="Power_combat_type3" value="Power_balance" required> Баланс між зручністю та потужністю
+              <input type="radio" name="Power_secondary_parameter" value="Power_balance" required> Баланс між зручністю та потужністю
             </label>
 
-  	    <!-- Варіанти основного параметру - компактності: -->
+  	    <!-- Варіанти вторинного параметра для компактності: -->
             <label id="Compactness_parameters" style="display: none;">
               <strong>3. Оберіть вторинний параметр зброї:</strong>
               <br>
-              <input type="radio" name="Compactness_combat_type3" value="Compactness_range" required> Дальність стрільби
+              <input type="radio" name="Compactness_secondary_parameter" value="Compactness_range" required> Дальність стрільби
               <br>
-              <input type="radio" name="Compactness_combat_type3" value="Compactness_accuracy" required> Точність стрільби
+              <input type="radio" name="Compactness_secondary_parameter" value="Compactness_accuracy" required> Точність стрільби
             </label>
 				
-  		<!-- Варіанти вторинного параметру - точності стрільби: -->
+  		<!-- Варіанти третинного параметра для вторинного параметра точності стрільби: -->
                 <label id="Compactness_accuracy_parameters" style="display: none;">
                   <strong>4. Оберіть третинний параметр зброї:</strong>
                   <br>
-                  <input type="radio" name="Compactness_combat_type4" value="Compactness_accuracy_versatility" required> Універсальність
+                  <input type="radio" name="Compactness_accuracy_tertiary_parameter" value="Compactness_accuracy_versatility" required> Універсальність
                   <br>
-                  <input type="radio" name="Compactness_combat_type4" value="Compactness_accuracy_accuracy" required> Точність стрільби
+                  <input type="radio" name="Compactness_accuracy_tertiary_parameter" value="Compactness_accuracy_accuracy" required> Точність стрільби
                 </label>           
   
     <button type="button" onclick="suggestWeapon()">Обрати</button>
@@ -285,303 +285,305 @@
     const form = document.getElementById('Weapon_selection');
 
     // Значення вибраної радіокнопки для категорій зброї:
-    const combat_type1 = form.querySelector('input[name="combat_type1"]:checked').value;
+    const Weapon_category = form.querySelector('input[name="Weapon_category"]:checked').value;
 
     let suggestedWeapon = "";
 
     // Логіка для зброї ближнього бою:
-    if (combat_type1 === 'Melee_combat')
+    if (Weapon_category === 'Melee_combat')
     {
       document.getElementById('Melee_weapons').style.display = 'block';
       // Значення вибраної радіокнопки для зброї ближнього бою:
-      const Melee_weapons_combat_type2 = form.querySelector('input[name="Melee_weapons_combat_type2"]:checked').value;
+      const Melee_weapon_kind = form.querySelector('input[name="Melee_weapon_kind"]:checked').value;
 
-      if (Melee_weapons_combat_type2 === 'One_Handed')
+      if (Melee_weapon_kind === 'One_Handed')
       {
         document.getElementById('One_Handed_weapons').style.display = 'block';
         // Значення вибраної радіокнопки для одноручної зброї ближнього бою:
-        const One_Handed_combat_type3 = form.querySelector('input[name="One_Handed_combat_type3"]:checked').value;
+        const One_Handed_type = form.querySelector('input[name="One_Handed_type"]:checked').value;
         
-        if (One_Handed_combat_type3 === 'One_Handed_smashing')
+        if (One_Handed_type === 'One_Handed_smashing')
         {
           document.getElementById('One_Handed_smashing_weapons').style.display = 'block';
           // Значення вибраної радіокнопки для разючої одноручної зброї:
-          const One_Handed_combat_type4_1 = form.querySelector('input[name="One_Handed_combat_type4_1"]:checked').value;
+          const One_Handed_smashing_classification = form.querySelector('input[name="One_Handed_smashing_classification"]:checked').value;
           
-          if (One_Handed_combat_type4_1 === 'One_Handed_smashing_western')
+          if (One_Handed_smashing_classification === 'One_Handed_smashing_western')
           {
             suggestedWeapon = "Рекомендується одноручний меч";
           }
               
-          else if (One_Handed_combat_type4_1 === 'One_Handed_smashing_eastern')
+          else if (One_Handed_smashing_classification === 'One_Handed_smashing_eastern')
           {
             suggestedWeapon = "Рекомендується шабля";
           }
         }
             
-        else if (One_Handed_combat_type3 === 'One_Handed_stabbing')
+        else if (One_Handed_type === 'One_Handed_stabbing')
         {
           document.getElementById('One_Handed_stabbing_weapons').style.display = 'block';
           // Значення вибраної радіокнопки для колючої одноручної зброї:
-          const One_Handed_combat_type4_2 = form.querySelector('input[name="One_Handed_combat_type4_2"]:checked').value;
+          const One_Handed_stabbing_classification = form.querySelector('input[name="One_Handed_stabbing_classification"]:checked').value;
 
-          if (One_Handed_combat_type4_2 === 'One_Handed_stabbing_western')
+          if (One_Handed_stabbing_classification === 'One_Handed_stabbing_western')
           {
             document.getElementById('One_Handed_stabbing_western_weapons').style.display = 'block';
-            const One_Handed_combat_type4_2_1 = form.querySelector('input[name="One_Handed_combat_type4_2_1"]:checked').value;
+            // Значення вибраної радіокнопки для західної колючої одноручної зброї:
+            const One_Handed_stabbing_western_blade_presence = form.querySelector('input[name="One_Handed_stabbing_western_blade_presence"]:checked').value;
                 
-            if (One_Handed_combat_type4_2_1 === 'One_Handed_stabbing_western_with_blade')
+            if (One_Handed_stabbing_western_blade_presence === 'One_Handed_stabbing_western_with_blade')
             {
               document.getElementById('One_Handed_stabbing_western_with_blade_weapons').style.display = 'block';
-              const One_Handed_combat_type4_2_1_1 = form.querySelector('input[name="One_Handed_combat_type4_2_1_1"]:checked').value;
+              // Значення вибраної радіокнопки для західної колючої одноручної зброї з лезом:
+              const One_Handed_stabbing_western_with_blade_parameter = form.querySelector('input[name="One_Handed_stabbing_western_with_blade_parameter"]:checked').value;
 
-              if (One_Handed_combat_type4_2_1_1 === 'One_Handed_stabbing_western_with_blade_compactness')
+              if (One_Handed_stabbing_western_with_blade_parameter === 'One_Handed_stabbing_western_with_blade_compactness')
               {
                 suggestedWeapon = "Рекомендується ніж";
               }
                   
-              else if (One_Handed_combat_type4_2_1_1 === 'One_Handed_stabbing_western_with_blade_range')
+              else if (One_Handed_stabbing_western_with_blade_parameter === 'One_Handed_stabbing_western_with_blade_range')
               {
                 suggestedWeapon = "Рекомендується шпага";
               }
             }
             
-            else if (One_Handed_combat_type4_2_1 === 'One_Handed_stabbing_western_without_blade')
+            else if (One_Handed_stabbing_western_blade_presence === 'One_Handed_stabbing_western_without_blade')
             {
               suggestedWeapon = "Рекомендується спис";
             }
           }
           
-          else if (One_Handed_combat_type4_2 === 'One_Handed_stabbing_eastern')
+          else if (One_Handed_stabbing_classification === 'One_Handed_stabbing_eastern')
           {
             suggestedWeapon = "Рекомендується кинджал";
           }
 
         }
             
-        else if (One_Handed_combat_type3 === 'One_Handed_blunt')
+        else if (One_Handed_type === 'One_Handed_blunt')
         {
           document.getElementById('One_Handed_blunt_weapons').style.display = 'block';
           // Значення вибраної радіокнопки для тупої одноручної зброї:
-          const One_Handed_combat_type4_3 = form.querySelector('input[name="One_Handed_combat_type4_3"]:checked').value;
+          const One_Handed_blunt_material = form.querySelector('input[name="One_Handed_blunt_material"]:checked').value;
             
-          if (One_Handed_combat_type4_3 === 'One_Handed_blunt_metal')
+          if (One_Handed_blunt_material === 'One_Handed_blunt_metal')
           {
             suggestedWeapon = "Рекомендується булава";
           }
               
-          else if (One_Handed_combat_type4_3 === 'One_Handed_blunt_wood')
+          else if (One_Handed_blunt_material === 'One_Handed_blunt_wood')
           {
             suggestedWeapon = "Рекомендується одноручна палиця";
           }
         }
             
-        else if (One_Handed_combat_type3 === 'One_Handed_slashing')
+        else if (One_Handed_type === 'One_Handed_slashing')
         {
           document.getElementById('One_Handed_slashing_weapons').style.display = 'block';
           // Значення вибраної радіокнопки для рубаючої одноручної зброї:
-          const One_Handed_combat_type4_4 = form.querySelector('input[name="One_Handed_combat_type4_4"]:checked').value;
+          const One_Handed_slashing_blade_type = form.querySelector('input[name="One_Handed_slashing_blade_type"]:checked').value;
             
-          if (One_Handed_combat_type4_4 === 'One_Handed_slashing_single_sided')
+          if (One_Handed_slashing_blade_type === 'One_Handed_slashing_single_sided')
           {
             suggestedWeapon = "Рекомендується одноручна бойова сокира";
           }
               
-          else if (One_Handed_combat_type4_4 === 'One_Handed_slashing_double_sided')
+          else if (One_Handed_slashing_blade_type === 'One_Handed_slashing_double_sided')
           {
             suggestedWeapon = "Рекомендується одноручна секира";
           }
         }
             
-        else if (One_Handed_combat_type3 === 'One_Handed_rotating')
+        else if (One_Handed_type === 'One_Handed_rotating')
         {
           document.getElementById('One_Handed_rotating_weapons').style.display = 'block';
           // Значення вибраної радіокнопки для обертальної одноручної зброї:
-          const One_Handed_combat_type4_5 = form.querySelector('input[name="One_Handed_combat_type4_5"]:checked').value;
+          const One_Handed_rotating_classification = form.querySelector('input[name="One_Handed_rotating_classification"]:checked').value;
             
-          if (One_Handed_combat_type4_5 === 'One_Handed_rotating_western')
+          if (One_Handed_rotating_classification === 'One_Handed_rotating_western')
           {
             suggestedWeapon = "Рекомендується кістень";
           }
               
-          else if (One_Handed_combat_type4_5 === 'One_Handed_rotating_eastern')
+          else if (One_Handed_rotating_classification === 'One_Handed_rotating_eastern')
           {
             suggestedWeapon = "Рекомендуються нунчаки";
           }
         }
             
-        else if (One_Handed_combat_type3 === 'One_Handed_stabbing_slashing')
+        else if (One_Handed_type === 'One_Handed_stabbing_slashing')
         {
           suggestedWeapon = "Рекомендується глефа";
         }
       }
           
-      else if (Melee_weapons_combat_type2 === 'Two_Handed')
+      else if (Melee_weapon_kind === 'Two_Handed')
       {
         document.getElementById('Two_Handed_weapons').style.display = 'block';
         // Значення вибраної радіокнопки для дворучної зброї ближнього бою:
-        const Two_Handed_combat_type3 = form.querySelector('input[name="Two_Handed_combat_type3"]:checked').value;
+        const Two_Handed_type = form.querySelector('input[name="Two_Handed_type"]:checked').value;
 
-        if (Two_Handed_combat_type3 === 'Two_Handed_smashing')
+        if (Two_Handed_type === 'Two_Handed_smashing')
         {
           document.getElementById('Two_Handed_smashing_weapons').style.display = 'block';
           // Значення вибраної радіокнопки для разючої дворучної зброї:
-          const Two_Handed_combat_type4_1 = form.querySelector('input[name="Two_Handed_combat_type4_1"]:checked').value;
+          const Two_Handed_smashing_classification = form.querySelector('input[name="Two_Handed_smashing_classification"]:checked').value;
 
-          if (Two_Handed_combat_type4_1 === 'Two_Handed_smashing_western')
+          if (Two_Handed_smashing_classification === 'Two_Handed_smashing_western')
           {
             suggestedWeapon = "Рекомендується дворучний меч";
           }
 
-          else if (Two_Handed_combat_type4_1 === 'Two_Handed_smashing_eastern')
+          else if (Two_Handed_smashing_classification === 'Two_Handed_smashing_eastern')
           {
             suggestedWeapon = "Рекомендується катана";
           }
         }
             
-        else if (Two_Handed_combat_type3 === 'Two_Handed_stabbing')
+        else if (Two_Handed_type === 'Two_Handed_stabbing')
         {
           document.getElementById('Two_Handed_stabbing_weapons').style.display = 'block';
           // Значення вибраної радіокнопки для колючої дворучної зброї:
-          const Two_Handed_combat_type4_2 = form.querySelector('input[name="Two_Handed_combat_type4_2"]:checked').value;
+          const Two_Handed_stabbing_combat_classification = form.querySelector('input[name="Two_Handed_stabbing_combat_classification"]:checked').value;
 
-          if (Two_Handed_combat_type4_2 === 'Two_Handed_stabbing_western')
+          if (Two_Handed_stabbing_combat_classification === 'Two_Handed_stabbing_western')
           {
             suggestedWeapon = "Рекомендується піка";
           }
 
-          else if (Two_Handed_combat_type4_2 === 'Two_Handed_stabbing_eastern')
+          else if (Two_Handed_stabbing_combat_classification === 'Two_Handed_stabbing_eastern')
           {
             suggestedWeapon = "Рекомендується наґіната";
           }
         }
             
-        else if (Two_Handed_combat_type3 === 'Two_Handed_blunt')
+        else if (Two_Handed_type === 'Two_Handed_blunt')
         {
           document.getElementById('Two_Handed_blunt_weapons').style.display = 'block';
           // Значення вибраної радіокнопки для тупої дворучної зброї:
-          const Two_Handed_combat_type4_3 = form.querySelector('input[name="Two_Handed_combat_type4_3"]:checked').value;
+          const Two_Handed_blunt_material = form.querySelector('input[name="Two_Handed_blunt_material"]:checked').value;
 
-          if (Two_Handed_combat_type4_3 === 'Two_Handed_blunt_metal')
+          if (Two_Handed_blunt_material === 'Two_Handed_blunt_metal')
           {
             suggestedWeapon = "Рекомендується бойовий молот";
           }
 
-          else if (Two_Handed_combat_type4_3 === 'Two_Handed_blunt_wood')
+          else if (Two_Handed_blunt_material === 'Two_Handed_blunt_wood')
           {
             suggestedWeapon = "Рекомендується дворучна палиця";
           }
         }
             
-        else if (Two_Handed_combat_type3 === 'Two_Handed_slashing')
+        else if (Two_Handed_type === 'Two_Handed_slashing')
         {
           document.getElementById('Two_Handed_slashing_weapons').style.display = 'block';
           // Значення вибраної радіокнопки для рубаючої дворучної зброї:
-          const Two_Handed_combat_type4_4 = form.querySelector('input[name="Two_Handed_combat_type4_4"]:checked').value;
+          const Two_Handed_slashing_blade_type = form.querySelector('input[name="Two_Handed_slashing_blade_type"]:checked').value;
 
-          if (Two_Handed_combat_type4_4 === 'Two_Handed_slashing_single_sided')
+          if (Two_Handed_slashing_blade_type === 'Two_Handed_slashing_single_sided')
           {
             suggestedWeapon = "Рекомендується дворучна бойова сокира";
           }
 
-          else if (Two_Handed_combat_type4_4 === 'Two_Handed_slashing_double_sided')
+          else if (Two_Handed_slashing_blade_type === 'Two_Handed_slashing_double_sided')
           {
             suggestedWeapon = "Рекомендується дворучна секира";
           }
         }
             
-        else if (Two_Handed_combat_type3 === 'Two_Handed_rotating')
+        else if (Two_Handed_type === 'Two_Handed_rotating')
         {
           suggestedWeapon = "Рекомендується кусарігама";
         }
             
-        else if (Two_Handed_combat_type3 === 'Two_Handed_stabbing_slashing')
+        else if (Two_Handed_type === 'Two_Handed_stabbing_slashing')
         {
           suggestedWeapon = "Рекомендується алебарда";
         }
       }
     }
     // Логіка для зброї дальнього бою:
-    else if (combat_type1 === 'Ranged_combat')
+    else if (Weapon_category === 'Ranged_combat')
     {
       document.getElementById('Ranged_weapons').style.display = 'block';
-      // Значення вибраної радіокнопки для зброї дального бою:
-      const Ranged_weapons_combat_type2 = form.querySelector('input[name="Ranged_weapons_combat_type2"]:checked').value;
+      // Значення вибраної радіокнопки для основного параметра зброї дального бою:
+      const Ranged_weapons_main_parameter = form.querySelector('input[name="Ranged_weapons_main_parameter"]:checked').value;
 
-      if (Ranged_weapons_combat_type2 === 'Range')
+      if (Ranged_weapons_main_parameter === 'Range')
       {
         document.getElementById('Range_parameters').style.display = 'block';
-        // Значення вибраної радіокнопки для основного параметру - дальності стрільби:
-        const Range_combat_type3 = form.querySelector('input[name="Range_combat_type3"]:checked').value;
+        // Значення вибраної радіокнопки для вторинного параметра для дальності стрільби:
+        const Range_secondary_parameter = form.querySelector('input[name="Range_secondary_parameter"]:checked').value;
 
-        if (Range_combat_type3 === 'Range_range')
+        if (Range_secondary_parameter === 'Range_range')
         {
           suggestedWeapon = "Рекомендується довгий лук";
         }
 
-        else if (Range_combat_type3 === 'Range_speed')
+        else if (Range_secondary_parameter === 'Range_speed')
         {
           suggestedWeapon = "Рекомендується короткий лук";
         }
 
-        else if (Range_combat_type3 === 'Range_balance')
+        else if (Range_secondary_parameter === 'Range_balance')
         {
           suggestedWeapon = "Рекомендується рефлексивний лук";
         }
       }
 
-      else if (Ranged_weapons_combat_type2 === 'Power')
+      else if (Ranged_weapons_main_parameter === 'Power')
       {
         document.getElementById('Power_parameters').style.display = 'block';
-        // Значення вибраної радіокнопки для основного параметру - потужності:
-        const Power_combat_type3 = form.querySelector('input[name="Power_combat_type3"]:checked').value;
+        // Значення вибраної радіокнопки для вторинного параметра для потужності:
+        const Power_secondary_parameter = form.querySelector('input[name="Power_secondary_parameter"]:checked').value;
         
-        if (Power_combat_type3 === 'Power_convenience')
+        if (Power_secondary_parameter === 'Power_convenience')
         {
           suggestedWeapon = "Рекомендується легкий арбалет";
         }
 
-        else if (Power_combat_type3 === 'Power_power')
+        else if (Power_secondary_parameter === 'Power_power')
         {
           suggestedWeapon = "Рекомендується важкий арбалет";
         }
         
-        else if (Power_combat_type3 === 'Power_balance')
+        else if (Power_secondary_parameter === 'Power_balance')
         {
           suggestedWeapon = "Рекомендується середній арбалет";
         }
       }
 
-      else if (Ranged_weapons_combat_type2 === 'Compactness')
+      else if (Ranged_weapons_main_parameter === 'Compactness')
       {
         document.getElementById('Compactness_parameters').style.display = 'block';
-        // Значення вибраної радіокнопки для основного параметру - компактності:
-        const Compactness_combat_type3 = form.querySelector('input[name="Compactness_combat_type3"]:checked').value;
+        // Значення вибраної радіокнопки для вторинного параметра для компактності:
+        const Compactness_secondary_parameter = form.querySelector('input[name="Compactness_secondary_parameter"]:checked').value;
 
-        if (Compactness_combat_type3 === 'Compactness_range')
+        if (Compactness_secondary_parameter === 'Compactness_range')
         {
           suggestedWeapon = "Рекомендується праща";
         }
 
-        else if (Compactness_combat_type3 === 'Compactness_accuracy')
+        else if (Compactness_secondary_parameter === 'Compactness_accuracy')
         {
           document.getElementById('Compactness_accuracy_parameters').style.display = 'block';
-          // Значення вибраної радіокнопки для вторинного параметру - точності стрільби:
-          const Compactness_combat_type4 = form.querySelector('input[name="Compactness_combat_type4"]:checked').value;
+          // Значення вибраної радіокнопки для третинного параметра для вторинного параметра точності стрільби:
+          const Compactness_accuracy_tertiary_parameter = form.querySelector('input[name="Compactness_accuracy_tertiary_parameter"]:checked').value;
 
-          if (Compactness_combat_type4 === 'Compactness_accuracy_versatility')
+          if (Compactness_accuracy_tertiary_parameter === 'Compactness_accuracy_versatility')
           {
             suggestedWeapon = "Рекомендуються кунаї";
           }
 
-          else if (Compactness_combat_type4 === 'Compactness_accuracy_accuracy')
+          else if (Compactness_accuracy_tertiary_parameter === 'Compactness_accuracy_accuracy')
           {
             suggestedWeapon = "Рекомендуються сюрікени";
           }
         }
       }
      
-      else if (Ranged_weapons_combat_type2 === 'Versatility')
+      else if (Ranged_weapons_main_parameter=== 'Versatility')
       {
         suggestedWeapon = "Рекомендуються дротики (метальні списи)";
       }
